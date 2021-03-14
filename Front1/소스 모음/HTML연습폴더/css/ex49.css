@@ -1,0 +1,42 @@
+div
+{
+    display:inline-block;
+}
+
+#box1
+{
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+#box2
+{
+    width:100px;
+    height:100px;
+    background: green;
+
+    position: relative;
+    
+    /*
+    static이라 움직이지 않는데
+    relative로 바꿔서 움직일수 있게 됨
+    */
+    /*현재 위치 기준으로 얼만큼 이동~*/
+
+    /*
+    relative를 주는 이유
+    1.현재 위치 기준으로 이동시키기 위한것
+    2.relative하위 요소에서
+    기준점을 주기 위한것
+    (absolute랑 연계가 된다.)
+    */
+
+}
+
+#box3
+{
+    width:100px;
+    height:100px;
+    background: blue;
+}

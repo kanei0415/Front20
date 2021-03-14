@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            $("#tit3, h1").css(
+                {"background":"red",
+                 "border":"2px dashed blue"
+                });
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>제이쿼리</h1> <!--이거-->
+    <h2>선택자</h2>
+    <h3 id="tit3">직접 선택자</h3><!--이거-->
+    <h4>인접 선택자</h4>
+</body>
+</html>
+

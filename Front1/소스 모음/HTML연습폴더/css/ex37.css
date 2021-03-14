@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#wrap
+{
+    width:1000px;
+    height:600px;
+    background: aqua;
+}
+
+#wrap>#header
+{
+    width:1000px;
+    height:100px;
+    background: blueviolet;
+}
+
+#header>.logo
+{
+    width:200px;
+    height:100px;
+    background: chartreuse;
+    display:inline-block;
+
+    margin-right:-6px;
+}
+
+#header>.nav
+{
+    width:800px;
+    height:100px;
+    background: chocolate;
+    display:inline-block;
+}
+
+#wrap>#contents
+{
+    width:1000px;
+    height:400px;
+    background: brown;
+}
+
+#wrap>#footer
+{
+    width:1000px;
+    height:100px;
+    background: blue;
+}

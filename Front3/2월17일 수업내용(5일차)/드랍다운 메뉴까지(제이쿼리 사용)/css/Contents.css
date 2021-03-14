@@ -1,0 +1,29 @@
+#contents{
+    width:1200px;
+    height:200px;
+    background-color: blueviolet;
+}
+
+#contents>#cont1
+{
+    float:left;
+    width:400px;
+    height:200px;
+    background-color: cadetblue;
+}
+
+#contents>#cont2
+{
+    float:left;
+    width:400px;
+    height:200px;
+    background-color: chartreuse;
+}
+
+#contents>#cont3
+{
+    float:left;
+    width:400px;
+    height:200px;
+    background-color: chocolate;
+}

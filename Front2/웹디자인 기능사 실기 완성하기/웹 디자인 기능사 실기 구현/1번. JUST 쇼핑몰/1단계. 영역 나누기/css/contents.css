@@ -1,0 +1,94 @@
+
+#contents>#cont1
+{
+    float:left;
+    width:40%;
+    height:200px;
+    background: #ffffff;
+}
+
+#contents>#cont2
+{
+    float:left;
+    width:30%;
+    height:200px;
+    background: #ffffff;
+}
+
+#contents>#cont3
+{
+    float:left;
+    width:30%;
+    height:200px;
+    background: #ffffff;
+}
+
+.tab > .tab_btn > a
+{
+    display:inline-block;
+    width:150px;
+    height:40px;
+    background: #ffffff;
+    font-size:24px;
+    font-weight: bold;
+    color:#222328;
+}
+/*공지사항 갤러리*/
+
+/*공지사항 
+갤러리*/
+
+.tab_contents>div:first-child
+{
+    background: #ffffff;
+    
+}
+
+.tab_contents>div:nth-child(2)
+{
+    background: #ffffff;
+    display:none;
+}
+
+.gallery_list>li
+{
+    float:left;
+    margin-right:10px;
+}
+
+.notice_list
+{
+    width:450px;
+    height:200px;
+    background: #ffffff;
+}
+
+.notice_list>li:first-child
+{
+    margin-top: 10px;
+}
+
+.notice_list>li
+{
+    position: relative;
+}
+
+.notice_list>li>a
+{
+    display: inline-block;
+    width:400px;
+    height:20px;
+    background: #ffffff;
+    border: 1px solid #222328;
+}
+
+.notice_list>li>a>span
+{
+    display: inline-block;
+    width:100px;
+    height:20px;
+    background: #ffffff;
+
+    position: absolute;
+    right:50px;
+}

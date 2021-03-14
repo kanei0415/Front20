@@ -1,0 +1,32 @@
+.rect
+{
+    width:100px;
+    height:100px;
+    margin:60px auto;
+    background: aqua;
+    /*
+    위,아래 60
+    좌우:auto (가운데 정렬)
+    남은 마진을 공평하게 나눠갖는것
+    */
+    /*
+    margin:2px; 
+    1개
+    margin:2px 4px;
+    위,아래 :2px
+    왼쪽, 오른쪽:4px
+
+    margin:2px 4px 6px;
+    위:2px
+    오른쪽:4px,왼쪽4px
+    아래:6px
+
+    margin:2px 4px 6px 8px;
+    위:2,오른:4,아래:6,왼:8
+    */
+}
+
+.rect:hover
+{
+    transform: rotate(45deg);
+}

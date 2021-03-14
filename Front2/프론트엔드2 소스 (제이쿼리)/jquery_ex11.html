@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            //parent - 부모
+            //부모 요소선택하는 메서드
+            $("#list_1").parent().css("border","2px dashed red");
+            //아이디가 list_1인 요소의 부모 요소에 css메서드 적용
+            //경계선 2픽셀 빨간 점선
+            
+            //백엔드 - 정보처리기사 (중요)
+            //프론트엔드 - 웹디자인 기능사 (웹디자인 기본)
+        });
+    </script>
+    
+</head>
+<body>
+    <ul id='wrap'>
+        <li>
+            리스트1
+            <ul>
+                <li id="list_1">리스트1-1</li>
+                <li>리스트1-2</li>
+            </ul>
+        </li>
+
+        <li>
+            리스트2
+        </li>
+
+        <li>
+            리스트3
+        </li>
+    </ul>
+</body>
+</html>
+

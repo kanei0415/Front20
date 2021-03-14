@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+                                       //이벤트 객체  
+            $(document).on("mousemove",function(e){
+                $(".posX").text(e.pageX);
+                //posX클래스에 이벤트 객체에서 얻어온
+                //x좌표 위치값을 넣음
+
+                $(".posY").text(e.pageY);
+                //posY클래스에 이벤트 객체에서 얻어온
+                //y좌표 위치값을 넣음
+            });
+
+        });
+    </script>
+    
+</head>
+<body>
+    <h1>mousemove</h1>
+    <p>X:<span class="posX">0</span>px</p>
+    <p>Y:<span class="posY">0</span>px</p>
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+body{
+    position: relative;
+    z-index:1;
+}
+
+#wrap
+{
+    width:1200px;
+    height:700px;
+    background: aqua;
+
+    margin:0 auto;
+}
+
+#header
+{
+    width:1200px;
+    height:100px;
+    background: aquamarine;
+
+    position: relative;
+    z-index: 2;
+}
+
+#slide
+{
+    width:1200px;
+    height:300px;
+    background: blueviolet;
+}
+
+#contents
+{
+    width:1200px;
+    height:200px;
+    background: chartreuse;
+}
+
+#footer
+{
+    width:1200px;
+    height:100px;
+    background: cornflowerblue;
+}

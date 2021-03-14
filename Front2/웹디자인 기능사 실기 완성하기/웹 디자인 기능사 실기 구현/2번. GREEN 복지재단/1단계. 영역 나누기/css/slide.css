@@ -1,0 +1,33 @@
+#slide
+{
+    position: relative;
+    overflow:hidden;
+    
+    /*
+    
+    영역을 넘어가는 것은 숨김
+    */
+    width:1200px;
+    height:300px;
+}
+
+#slide>#slide_contents
+{
+   
+    /*
+    슬라이드 이미지 하나
+    가로:1200
+    세로:300
+    */
+    width:3600px;
+    height:300px;
+
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#slide>#slide_contents>img
+{
+    float:left;
+}

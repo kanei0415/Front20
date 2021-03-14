@@ -1,0 +1,42 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul>li
+{
+    float:left;
+    margin:1px;
+}
+
+ul>li>a
+{
+    display:block;
+    width:100px;
+    height:40px;
+    background: indianred;
+    border: 1px solid black;
+}
+
+a:hover
+{
+    background: red;
+}
+
+/*
+기능사에서 보는
+html+css 별로 안어려운데
+문제는
+html+css+javascript+jquery
+뭔가 종합적으로 다해야된다.
+-다해야되니까 조금 어려울수도...
+*/

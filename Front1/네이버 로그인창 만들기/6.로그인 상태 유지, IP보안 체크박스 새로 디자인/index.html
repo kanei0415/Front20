@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/container.css">
+
+</head>
+<body>
+    
+   <div id="wrap">
+       <div id="header">
+
+            <h1>
+                <a href="#" class="naver_logo"></a>
+            </h1>
+
+            <div class="lang">
+                <select>
+                    <option>한국어</option>
+                </select>
+            </div>
+
+       </div>
+       <div id="container">
+            
+            <fieldset class="login_form">
+
+                <div class="id_area">
+                    <div class="input_row">
+                        <span class="input_box">
+                            <label for="id"></label>
+                            <input type="text" id="id" placeholder="아이디">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pw_area">
+                    <div class="input_row">
+                        <span class="input_box">
+                            <label for="pw"></label>
+                            <input type="text" id="pw" placeholder="비밀번호">
+                        </span>
+                    </div>
+                </div>
+
+                <input type="submit" value="로그인" id="login">
+
+                <div class="check_info">
+                    
+                    <div class="login_check">
+
+                        <span class="login_off">
+                            <input type="checkbox" class="off" id="login_chk">
+                        </span>
+                        
+                        <label for="login_chk">로그인 상태 유지</label>
+                        
+                    </div>
+
+                    <div class="pc_check">
+                        <a href="#">
+                            IP 보안
+                        </a>
+
+                        <span class="ip_off">
+                            <input type="checkbox" class="off" id="ip_chk">
+                        </span>
+                        
+                    </div>
+
+                </div>
+
+            </fieldset>
+
+
+
+       </div>
+   </div>
+  
+</body>
+
+</html>

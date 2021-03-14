@@ -1,0 +1,20 @@
+.rect1
+{
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+.rect2
+{
+    width:100px;
+    height:100px;
+    background: blue;
+    transform: scale(1.5);
+    /*
+    scale:규모,축척
+    1.5배로 크기를 확대한다.
+    1.5배로 크기를 늘린다.
+    가로,세로 같이 늘어난다.
+    */
+}

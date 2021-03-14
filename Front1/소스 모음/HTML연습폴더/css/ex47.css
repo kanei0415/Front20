@@ -1,0 +1,31 @@
+#wrap
+{
+    width:500px;
+    height:500px;
+    background: aquamarine;
+}
+
+#wrap>.div1
+{
+    width:100px;
+    height:100px;
+    background: blue;
+}
+
+
+#wrap>.div2
+{
+    width:100px;
+    height:100px;
+    background: green;
+
+    position: relative;
+    left:50px;
+    top:50px;
+}
+
+/*
+relative : 상대적인
+상대위치
+현재위치 기준으로 얼만큼 이동한다.
+*/

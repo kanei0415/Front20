@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+
+    <script src="./js/jquery.min.js">
+    </script>
+    <!--
+        keydown
+        키가 눌렸을때 이벤트 발생시킨다.
+    -->
+    <script>//익명함수 (이름이 없는 함수)
+        $(function () {
+            $(document).on("keydown", keyEventFnc);
+                                        //함수가 복잡해서
+                                        //익명함수를 안썼다.
+
+            //key가 눌리면...   
+            //keyEventFnc함수 실행     
+
+                                //매개변수 e에
+                                //이벤트 객체 정보가 넘어온다.
+            function keyEventFnc(e) {
+
+                var direct = "";
+                        //눌려진 키 정보를 판단
+                switch (e.keyCode) {
+                    case 37:
+                        direct = "LEFT";//왼쪽키면 값만 넣고
+                        break;//나간다.
+                    case 38:
+                        direct = "TOP";
+                        break;
+                    case 39:
+                        direct = "RIGHT";
+                        break;
+                    case 40:
+                        direct = "BOTTOM";
+                        break;
+                }
+
+                if(direct)
+                {//키가 눌렸다면?
+                    $("#user_id").val(direct);
+                    //아이디 user_id의 value값을 direct로 바꾼다.
+                    //<input value="LEFT">
+                    //<input value="RIGHT">
+                    //...
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <p>
+        <input type="text" name="user_id" id="user_id">
+    </p>
+</body>
+
+</html>

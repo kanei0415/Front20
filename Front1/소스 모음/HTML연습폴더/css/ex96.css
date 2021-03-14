@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div
+{
+    width:100%;
+    height:100px;
+    margin-bottom: 10px;
+}
+
+.grad_45
+{
+    background: linear-gradient(45deg,blue,red);
+}
+
+/*
+45로 기울어진 그라디언트인데...
+파랑 시작,
+빨강 종료,
+*/

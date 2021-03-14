@@ -1,0 +1,13 @@
+
+	오늘 수업 할 내용
+
+-리트리버 소개 같이 풀어보기
+-position 속성 연습
+(relative, absolute 사용해보기)
+-css의 first-child, nth-child 사용해보기
+-폰트 다운로드 받아서 적용해보기
+
+프론트 엔드 공유폴더
+http://naver.me/GpPIFP1z
+
+

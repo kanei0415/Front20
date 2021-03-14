@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        //객체...
+        //객체안에 값을 저장하는 변수도 있고
+        //기능을 담당하는 함수도 있다.
+        //데이터 저장소와 함수의 묶음...
+        var person = new Object();
+        //Object - 객체
+        //Array - 배열 (객체)
+        //Date - 날짜 (객체)
+        //Math - 수학 (객체)
+        
+        person.name="서강준";
+        person.age=20;
+        person.height=178.4;
+
+        person.introduce=function(){
+            document.write("이름:"+this.name,"<br>");
+            document.write("나이:"+this.age,"<br>");
+            document.write("키:"+this.height,"<br>");
+        }
+
+        person.introduce();
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

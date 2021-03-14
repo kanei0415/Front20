@@ -1,0 +1,47 @@
+.tri1 /*윗방향 삼각형*/
+{
+    width:0px;
+    height:0px;
+
+    border-top: 50px solid none;
+    border-bottom: 50px solid red;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+/*
+옆면이 - transparent
+바닥 red
+꼭지점 none
+*/
+.tri2/*아랫방향*/
+{
+    width:0px;
+    height:0px;
+
+    border-top: 50px solid red;
+    border-bottom: 50px solid none;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+.tri3 /*왼쪽 방향 삼각형*/
+{
+    width:0px;
+    height:0px;
+
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid red;
+    border-left: 50px solid none;
+}
+
+.tri4 /*오른쪽 방향 삼각형*/
+{
+    width:0px;
+    height:0px;
+
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid none;
+    border-left: 50px solid red;
+}

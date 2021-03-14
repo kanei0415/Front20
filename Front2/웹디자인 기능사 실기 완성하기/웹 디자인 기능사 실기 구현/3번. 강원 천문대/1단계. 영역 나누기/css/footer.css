@@ -1,0 +1,61 @@
+#footer>.logo
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: #ffffff;
+}
+
+#footer>.logo>img
+{
+    transform:scale(0.7);
+    position: relative;
+    top:30px;
+}
+
+#footer>#right
+{
+    float:left;
+    width:1000px;
+    height:100px;
+    background: #ffffff;
+}
+
+#footer>#right>.bottom
+{
+    width:1000px;
+    height:50px;
+    background: #ffffff;
+}
+
+#footer>#right>.bottom>ul
+{
+    position: relative;
+    left:10px;
+    top:10px;
+}
+
+#footer>#right>.bottom>ul>li
+{
+    float:left;
+    margin-right:10px;
+}
+
+#footer>#right>.bottom>ul>li>a
+{
+    color:#333333;
+}
+
+#footer>#right>.copyright
+{
+    width:1000px;
+    height:50px;
+    background: #ffffff;
+}
+
+#footer>#right>.copyright>address
+{
+    position: relative;
+    left:10px;
+    top:10px;
+}

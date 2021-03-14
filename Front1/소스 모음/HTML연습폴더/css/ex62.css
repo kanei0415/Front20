@@ -1,0 +1,40 @@
+ul>li
+{
+    width:100px;
+    height:40px;
+}
+
+ul>li:first-child
+{
+  background: red;
+}
+
+ul>li:nth-child(2)
+{
+    background: orange;
+}
+
+ul>li:nth-child(3)
+{
+    background: yellow;
+}
+
+ul>li:nth-child(4)
+{
+    background: green;
+}
+
+ul>li:nth-child(5)
+{
+    background: blue;
+}
+
+ul>li:nth-child(6)
+{
+    background: navy;
+}
+
+ul>li:nth-child(7)
+{
+    background: purple;
+}

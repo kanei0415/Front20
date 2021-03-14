@@ -1,0 +1,53 @@
+#footer>.logo
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: #ffffff;
+}
+
+#footer>.copyright
+{
+    float:left;
+    width:800px;
+    height:100px;
+    background: #ffffff;
+}
+
+#footer>.sns
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: #ffffff;
+}
+/*
+하위 선택자
+div>.logo : div 한단계 아래 로고클래스 
+div .logo : div 하위에있는 logo 클래스 몇단계 아래던지 다~
+*/
+#footer>.logo>img
+{
+    margin-top: 20px;
+}
+
+#footer > .copyright
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+
+#footer> .sns
+{
+    padding-left: 15px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+#footer> .sns > .sns_list >li
+{
+    float:left;
+    margin-right: 7px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Ajax </title>
+<script src="./js/jquery.min.js"></script>
+<script>
+$(function() {
+	$.ajax({
+		url:"js/MOVIE.json",
+		dataType:"json",
+		success:function(data) {
+			if(data.length > 0) {
+				var tb = $("<table />");
+				for(var i in data) {
+					var $title = data[i].title;
+					var $genre = data[i].genre;
+					var $running = data[i].running;
+
+					var row = $("<tr />").append(
+						$("<td />").text($title),
+						$("<td />").text($genre),
+						$("<td />").text($running)
+					);
+
+					tb.append(row);
+				}
+				$(".wrap").append(tb);
+			}
+		}
+	});
+});
+</script>
+</head>
+<body>
+  <div class="wrap"></div>
+</body>
+</html>

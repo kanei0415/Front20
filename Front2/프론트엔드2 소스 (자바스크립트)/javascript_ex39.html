@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        var num=prompt("숫자 입력");
+        var sum=0;
+        //6 - 1 2 3
+        //28 - 1 2 4 7 14
+        num=parseInt(num); 
+  
+        for(var i=1; i<num; i++)
+        {
+            if(num%i==0)
+            {//num을 i로 나눈 나머지가 0이라면?
+                sum = sum + i;
+            }
+        }
+
+        if(num==sum)
+        {
+            document.write(num+"은 완전수!","<br>");
+        }
+        else
+        {
+            document.write(num+"은 완전수가 아님!","<br>");
+        }
+        
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

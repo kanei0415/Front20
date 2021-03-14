@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            
+            let style1={ 
+                "background":"red",
+                "color":'blue'
+            }
+            let style2={ 
+                "background":"green",
+                "color":'blue'
+            }
+            
+            $("#menu>li:first").css(style1);
+            $("#menu>li:last").css(style2);
+        });
+    </script>
+    
+</head>
+<body>
+    <!--
+        first메서드
+        last메서드
+    -->
+    <ul id="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+    </ul>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;    
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap
+{
+    width:400px;
+    height:900px;
+    background: aqua;
+
+    margin-left: 506px;
+}
+
+#login_area
+{
+    width:400px;
+    height:400px;
+    background: aquamarine;
+}

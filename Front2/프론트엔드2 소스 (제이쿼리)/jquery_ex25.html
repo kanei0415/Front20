@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            
+            //JavaScript Object Notaion
+            //자바스크립트 객체 표현
+            //var obj=[1,2,3];
+            //obj[0],obj[1]
+            var obj=[//JSON타입 객체 배열
+                {
+                    "area":"서울",
+                    "name":"이민호"
+                },
+                {
+                    "area":"부산",
+                    "name":"정채연"
+                },
+                {
+                    "area":"전주",
+                    "name":"정기석"
+                },
+            ]
+            //each메서드
+            //배열의 인덱스와 데이터를 순차적으로 다 가져온다.
+            $(obj).each(function(i,o){
+                //i는 인덱스 (위치)
+                //o는 데이터
+                console.log(i+":",o);
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>
+

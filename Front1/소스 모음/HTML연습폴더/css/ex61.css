@@ -1,0 +1,26 @@
+ul
+{
+
+}
+
+
+ul>li
+{
+    width:100px;
+    height:100px;
+}
+
+ul>li:first-of-type
+{
+    background: red;
+}
+
+/*
+first-child는
+반드시 하위요소가 첫번째 있어야 되고
+
+first-of-type은
+몇번째 있든 상관없다.
+그냥 하위요소 중에서 첫번째를
+알아서 찾아간다.
+*/

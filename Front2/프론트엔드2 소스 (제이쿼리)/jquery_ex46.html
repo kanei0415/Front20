@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+      
+            $(".btn1").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+
+                         //slideUp, slideDown번갈아 가면서
+                $(".box").slideToggle(1000,"linear",function(){
+                    alert("complete!");         //익명함수 (용도:콜백함수)
+                                                //slideUp다 하고 나면~ (특정조건)
+                                  //1초  //linear, swing
+                                         //1초동안 일정하게,1초동안 증가하다가 속도줄어들게
+                });
+            });
+
+        });
+        //콜백함수 : 어떤 특정한 조건이 만족되면 실행되는 함수
+        //대표적인 setInterval 2초뒤에 실행, 2초뒤에 실행...
+    </script>
+</head>
+<body>
+    <p>
+        <button class="btn1">slideToggle</button>
+    </p>
+
+    <div class="box">
+        <div class="content">
+            html+css, javascript, jquery, server, ajax, react
+        </div>
+    </div>
+</body>
+</html>
+

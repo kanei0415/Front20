@@ -1,0 +1,15 @@
+react에서 jquery사용하는법
+
+cmd창에서
+npm install jquery
+
+import $ from 'jquery';
+
+한다음 사용
+
+1.JSON배열을 props값으로 넘기기
+2.이벤트 사용
+3.함수 바인딩하기
+4.애로우 함수 사용하기
+5.이벤트 사용해서 state값 변경하기
+(제목을 누르면 mode가 welcome으로 변경)

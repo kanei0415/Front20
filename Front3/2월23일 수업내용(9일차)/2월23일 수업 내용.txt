@@ -1,0 +1,12 @@
+배열객체 관련 메서드
+push
+concat
+slice
+filter
+복습
+
+find
+splice
+unshift
+map
+신규 학습

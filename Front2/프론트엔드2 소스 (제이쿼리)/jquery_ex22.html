@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            
+            let style1={ 
+                "background":"red",
+                "color":'blue'
+            }
+            let style2={ 
+                "background":"green",
+                "color":'blue'
+            }
+                        //0번째, 2번째
+            $("#menu>li").even().css(style1);
+            //even number : 짝수 
+            //아이디가 menu인 요소의 한단계 하위 li
+            //중에서 짝수번째 선택해서
+            //css메서드 적용
+            
+                        //1번째, 3번째
+            $("#menu>li").odd().css(style2);
+            //odd number : 홀수 
+            //아이디가 menu인 요소의 한단계 하위 li
+            //중에서 홀수번째 선택해서
+            //css메서드 적용
+        });
+    </script>
+    
+</head>
+<body>
+    <!--
+        first메서드
+        last메서드
+    -->
+    <ul id="menu">
+        <li>내용1</li><!--0번째-->
+        <li>내용2</li><!--1번째-->
+        <li>내용3</li><!--2번째-->
+        <li>내용4</li><!--3번째-->
+    </ul>
+</body>
+</html>
+

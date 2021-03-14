@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;    
+}
+
+#wrap
+{
+    width:100%;
+    height:100%;
+    background: aqua;
+}
+
+#wrap>#header
+{
+    width:768px;
+    height:210px;
+    background: aquamarine;
+
+    margin-left:567px;
+
+    position: relative;
+}
+
+#wrap>#container
+{
+    width:768px;
+    height:700px;
+    background: blueviolet;
+
+    margin-left:567px;
+}
+
+.naver_logo
+{
+    background:url("../images/pc_sp_login_190522.png") no-repeat;
+}
+
+.naver_logo
+{
+    width:230px;
+    height:46px;
+
+    background-position: 0px 0px;
+}
+

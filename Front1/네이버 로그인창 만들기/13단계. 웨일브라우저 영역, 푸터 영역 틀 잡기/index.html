@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>네이버 로그인</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/container.css">
+    <link rel="stylesheet" type="text/css" href="./css/more_easy.css">
+    <link rel="stylesheet" type="text/css" href="./css/info.css">
+    <link rel="stylesheet" type="text/css" href="./css/whale.css">
+
+</head>
+<body>
+    
+   <div id="wrap">
+       <div id="header">
+
+            <h1>
+                <a href="#" class="naver_logo"></a>
+            </h1>
+
+            <div class="lang">
+                <select>
+                    <option>한국어</option>
+                </select>
+            </div>
+
+       </div>
+       <div id="container">
+            
+            <fieldset class="login_form">
+
+                <div class="id_area">
+                    <div class="input_row">
+                        <span class="input_box">
+                            <label for="id"></label>
+                            <input type="text" id="id" placeholder="아이디">
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pw_area">
+                    <div class="input_row">
+                        <span class="input_box">
+                            <label for="pw"></label>
+                            <input type="text" id="pw" placeholder="비밀번호">
+                        </span>
+                    </div>
+                </div>
+
+                <input type="submit" value="로그인" id="login">
+
+                <div class="check_info">
+                    
+                    <div class="login_check">
+
+                        <span class="login_off">
+                            <input type="checkbox" class="off" id="login_chk">
+                        </span>
+                        
+                        <label for="login_chk">로그인 상태 유지</label>
+                        
+                    </div>
+
+                    <div class="pc_check">
+                        <a href="#">
+                            IP 보안
+                        </a>
+
+                        <span class="ip_off">
+                            <input type="checkbox" class="off" id="ip_chk">
+                        </span>
+                        
+                    </div>
+
+                </div>
+
+                <div class="more_easy">
+                    <h1>더욱 간편한 로그인</h1>
+                    <div class="button_area">
+                        <button class="qr_btn">
+                            <span class="qr_img"></span>
+                            QR코드 로그인
+                        </button>
+
+                        <button class="once_btn">
+                            <span class="once_img"></span>
+                            일회용 번호 로그인
+                        </button>
+                    </div>
+
+                    <div class="safe_notice">
+                        PC방 등 공용 PC라면 안전하게 사용해 보세요.
+                        <img src="./images/m_nudge_close.png">
+                    </div>
+                    <span class="tri"></span>
+
+                </div>
+
+
+                <div class="info">
+
+                    <ul>
+                        <li> <span>아이디 찾기</span> <span class="bar"></span> </li>
+                        <li> <span>비밀번호 찾기</span> <span class="bar"></span> </li>
+                        <li> <span>회원가입</span> <span></span> </li>
+                    </ul>
+
+                </div>
+
+
+            </fieldset>
+
+            <div class="whale_wrap">
+                <img src="./images/whale.png" alt="웨일브라우저는">
+            </div>
+
+            <footer id="footer">
+                푸터
+            </footer>
+
+       </div>
+   </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+            $(".btn1").on("click",function(){
+                $(".txt1").delay(3000).animate({marginLeft:"300px"},1000);
+                //txt1클래스를 3초 딜레이 주고나서 
+                //오른쪽으로 300픽셀만큼 1초동안 이동
+
+            });
+        });
+    </script>
+    
+</head>
+<body>   
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+
+    <span class='txt1'>텍스트</span>
+</body>
+</html>
+

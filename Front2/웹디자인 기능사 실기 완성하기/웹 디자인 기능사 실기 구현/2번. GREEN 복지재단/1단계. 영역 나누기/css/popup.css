@@ -1,0 +1,11 @@
+#popup{
+    width:500px;
+    height:500px;
+   
+    position: fixed;
+    left:35%;
+    top:15%;
+    z-index: 9;
+    background: darkcyan;
+    border:1px solid gray;
+}

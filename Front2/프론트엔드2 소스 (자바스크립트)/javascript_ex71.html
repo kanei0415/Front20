@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        //2차원 배열
+        //동적 배열
+        //어제 했던 1차원 배열
+        //let arr = new Array();
+        //arr.push("kiwi");
+        //["kiwi"];
+        //arr.push("apple");
+        //["kiwi","apple"];
+        //1차원 동적 배열
+
+        //2차원...
+        //1차원이 선
+        //2차원이 면
+        let arr = [
+            [90,85,78,0,0],
+            [88,90,95,0,0]
+            //국,영,수,총점,평균
+        ]
+        //var보단 let이 최신 문법
+        for(let i=0; i<=1; i++)//i:0~1
+        {
+            for(let j=0; j<=2; j++)//j:0~2
+            {
+               arr[i][3]= arr[i][3] + arr[i][j];
+               //i행 0열~2열까지 합을
+               //i행 3열에 저장한다.
+            }
+            arr[i][4]= arr[i][3]/3; 
+        }
+
+        for(let i=0; i<=1; i++)//i:0~1
+        {
+            for(let j=0; j<=4; j++)//j:0~4
+            {
+                if(j==4){
+                    document.write(arr[i][j].toFixed(1)+" ");
+                }
+                else{
+                    document.write(arr[i][j]+" ");
+                }
+            }
+            document.write("<br>");
+        }
+
+        //i:0, j:0~2
+        //i:1, j:0~2
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

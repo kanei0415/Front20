@@ -1,0 +1,30 @@
+#slide
+{
+    position: relative;
+    /*
+    relative만 주면
+    그냥 그대로있죠
+    relative위치 기준
+    */
+    overflow: hidden;
+    /*
+    넘친거 숨기기
+    */
+    width:1200px;
+    height:300px;
+}
+
+#slide>#slide_contents
+{
+    position: absolute;
+    top:0;
+    left:0;
+    /*
+    부모가
+    relaitve나
+    absolute인것을 기준으로
+    위치 잡는다.
+    */
+    width:1200px;
+    height:900px;
+}

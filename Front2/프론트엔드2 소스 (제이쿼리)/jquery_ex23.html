@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            //eq, lt, gt
+            //eqaul: eq(x):x번째 요소
+
+            //less than: lt(x):x번째 요소보다 작은것
+            //이전 요소
+
+            //greater than: gt(x):x번째 요소보다 큰것
+            //이후 요소
+
+            let style1={ 
+                "background":"red",
+                "color":'blue'
+            }
+            let style2={ 
+                "background":"green",
+                "color":'blue'
+            }
+            let style3={ 
+                "background":"aqua",
+                "color":'blue'
+            }
+
+            $("#menu>li").eq(2).css(style1);
+            //아이디가 menu인 요소의
+            //한단계 하위 li중에서 2번째
+            //거기에 css 스타일 적용
+            
+            $("#menu>li:lt(2)").css(style2);
+            //0번째, 1번째
+            //기본 선택자
+            //탐색 선택자
+
+            $("#menu>li:gt(2)").css(style3);
+            //3번째, 4번째
+
+            //nth-child
+            //nth-last-child
+            //first-of-type
+            //last-of-type
+            //...
+            //...
+            
+        });
+    </script>
+    
+</head>
+<body>
+    <ul id="menu">
+        <li>내용1</li><!--0번째-->
+        <li>내용2</li><!--1번째-->
+        <li>내용3</li><!--2번째-->
+        <li>내용4</li><!--3번째-->
+        <li>내용5</li><!--4번째-->
+    </ul>
+</body>
+</html>
+

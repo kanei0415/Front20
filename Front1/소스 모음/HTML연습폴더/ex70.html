@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--언어 한국어-->
+<html>
+<head>
+    <!--head:머리-->
+    <meta charset="UTF-8">
+    <!-- meta태그 -->
+    <!-- charset에는 문자를 읽어들이는 인코딩 방식을 설정-->
+    <link rel="stylesheet" type="text/css" href="./css/ex48.css">
+</head>
+
+<body>
+    <!--
+        input은 입력창도 만들수있고
+        버튼도 만들수있고...
+    -->
+   <input type="text"><!--로그인 할때 아이디 적는 창--><br>
+   <input type="text" name="input_el2"><br>
+   <!--name은 DOM API할때-->
+   <input type="text" name="input_el3" value="입력"><br>
+   <input type="text" name="input_el4" value="입력" maxlength="10"><br>
+   <input type="text" name="input_el4" value="입력" maxlength="10" disabled><br>
+   <input type="text" name="input_el4" value="입력" maxlength="10" readonly><br>
+    <!--
+        disabled 입력도 안되고, 값도 전달 불가능
+        readonly는 입력은 안되고, 값은 전달 된다.
+    -->
+</body>
+</html>

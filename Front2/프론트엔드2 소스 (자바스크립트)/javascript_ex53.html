@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+</head>
+<body>
+    <button onclick="MySetInterval()">시작 버튼</button>
+    <button onclick="MyClearInterval()">중지 버튼</button>
+
+    <script>
+        var result=0;
+        function func(){
+            console.log("hello javascript!");
+        }   
+
+        function MySetInterval(){
+            result=setInterval(func,1000);
+        }
+
+        function MyClearInterval(){
+            clearInterval(result);
+        }
+    </script>
+</body>
+</html>
+
+

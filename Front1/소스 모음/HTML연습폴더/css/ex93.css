@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#outer
+{
+    position: relative;
+    left:100px;
+    top:100px;
+
+    width:500px;
+    height:500px;
+    background: brown;
+}
+
+.box
+{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+#two
+{
+    position: absolute;
+
+    /*
+    absolute는
+    자신의 상위요소 중에서
+    relative나 absolute인 요소를 기준으로
+    얼만큼 이동
+    */
+
+    /*
+    relative는 현재위치에서 얼만큼...
+    */
+    /*
+    요소들이 static으로 되어있어서
+    움직이지 않게 되어있다.
+
+    relative나 absolute를 주고
+    위치를 조절하면 이동한다.
+    */
+    top:20px;
+    left:20px;
+    background: blue;
+}

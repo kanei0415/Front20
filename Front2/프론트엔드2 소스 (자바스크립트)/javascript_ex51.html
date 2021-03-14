@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        function func(){
+            alert("call back function!");
+        }
+
+        var result=setTimeout(func,3000);
+        clearTimeout(result);
+        //setTimeout을 종료시켜버림 
+        //3초뒤에 실행안됨...
+
+        //clearTimeout(); - setTimeout종료
+        //clearInterval(); - setInterval 종료
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

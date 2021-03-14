@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        //if ~ else if ~ else
+        //if ~ else
+        //조건을 if에 밖에 못쓴다.
+        //여러개의 조건을 구분하려면
+        //if ~ else if ~ else
+        //성적
+
+        var grade=0;
+        grade = prompt("점수 입력");
+
+        grade = Number(grade);
+        //100 >= grade >= 90
+        if( 100 >= grade && grade >= 90)
+        {
+            document.write("A학점","<br>");
+        }
+        else if( 90 > grade && grade >= 80)
+        {
+            document.write("B학점","<br>");
+        }
+        else if( 80 > grade && grade >= 70)
+        {
+            document.write("C학점","<br>");
+        }
+        else if( 70 > grade && grade >= 60)
+        {
+            document.write("D학점","<br>");
+        }
+        else
+        {
+            document.write("F학점","<br>");
+        }
+    
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

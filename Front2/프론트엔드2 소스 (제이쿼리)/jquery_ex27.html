@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+       let myObj = 
+       [//JSON 객체 배열 - JSON타입 배열
+            {
+            name:"John",
+            age:30,
+            city:"New York"
+            } ,//JSON배열의 0번째 요소
+
+            {
+            name:"Ann",
+            age:20,
+            city:"Los Angeles"
+            }
+            
+            
+            //JSON배열의 1번째 요소
+            //JSON,XML
+        ];
+        document.write(myObj[0]["name"],"<br>");//John
+        document.write(myObj[0]["age"],"<br>");
+        document.write(myObj[0]["city"],"<br>");
+        document.write("<br>");
+        document.write(myObj[1]["name"],"<br>");//Ann
+        document.write(myObj[1]["age"],"<br>");
+        document.write(myObj[1]["city"],"<br>");
+
+    </script>
+    
+</head>
+<body>
+
+</body>
+</html>
+

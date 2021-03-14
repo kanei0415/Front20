@@ -1,0 +1,39 @@
+#personWrap
+{
+    width:300px;
+    height:150px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin:10px;
+    font-size: 20px;
+    
+}
+
+#nameDiv
+{
+    width:300px;
+    height:50px;
+    background-color: aqua;
+    padding-left: 20px;
+    padding-top:5px;
+    box-sizing: border-box;
+}
+
+#ageDiv
+{
+    width:300px;
+    height:50px;
+    background-color: aquamarine;
+    padding-left: 20px;
+    padding-top:5px;
+    box-sizing: border-box;
+}
+#phoneDiv
+{
+    width:300px;
+    height:50px;
+    background-color: burlywood;
+    padding-left: 20px;
+    padding-top:5px;
+    box-sizing: border-box;
+}

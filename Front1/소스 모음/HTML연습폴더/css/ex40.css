@@ -1,0 +1,99 @@
+#wrap
+{
+    width:1200px;
+    height:700px;
+    background: aqua;
+}
+
+#header
+{
+    width:1200px;
+    height:100px;
+    background: aquamarine;
+}
+
+#header>.logo
+{
+    width:200px;
+    height:100px;
+    background: cadetblue;
+    float:left;
+}
+
+#header>.nav
+{
+    width:1000px;
+    height:100px;
+    background: chartreuse;
+    float:left;
+}
+
+#slide
+{
+    width:1200px;
+    height:300px;
+    background: brown;
+}
+
+#contents
+{
+    width:1200px;
+    height:200px;
+    background: blueviolet;
+}
+
+#contents>.cont1
+{
+    width:33.3%;
+    height:200px;
+    background: darkblue;
+    float:left;
+}
+
+#contents>.cont2
+{
+    width:33.3%;
+    height:200px;
+    background: darkolivegreen;
+    float:left;
+}
+
+#contents>.cont3
+{
+    width:33.3%;
+    height:200px;
+    background: darkorchid;
+    float:left;
+}
+
+
+#footer
+{
+    width:1200px;
+    height:100px;
+    background: blue;
+}
+
+#footer>.logo
+{
+    width:200px;
+    height:100px;
+    background: firebrick;
+    float:left;
+}
+
+#footer>.copyright
+{
+    width:800px;
+    height:100px;
+    background: forestgreen;
+    float:left;
+}
+
+#footer>.sns
+{
+    width:200px;
+    height:100px;
+    background: fuchsia;
+    float:left;
+}

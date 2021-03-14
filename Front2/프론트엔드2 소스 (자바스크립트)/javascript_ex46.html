@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        //재귀함수
+        //다시 돌아오는 함수...
+        //자기 자신이 자기 자신을 호출한다.
+        //자기 자신의 함수의 정의 안에 호출문장이 있다.
+        function recursive(n){
+
+            if(n==0)
+            {
+                return;
+                //return num; 이거랑 <- 얘는 값을 반환
+                //return; 이거랑 다르다. <-종료
+                //그냥 return만 쓰는건 종료
+            }
+            else
+            {
+            console.log("recursive call! "+n);
+            recursive(n-1);
+            }
+        }
+
+        recursive(3);
+        //recursive 함수 호출
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+
+    var arr=new Array();
+    //배열객체는 생성됬는데 길이가 없다.
+    //객체가 생성됬다는 기능은하는데
+    //사용자가 값을 입력해서...
+    //0을 입력하기 전까지... 그 값들을 계속 배열 저장하고...
+    //0을 입력하기 전까지...합을 구한다...
+    
+    var num=0;
+    var sum=0;
+
+    //점, 선, 면, 입체...
+    //. , 1차원, 2차원, 3차원...까지...
+    //
+
+    while(true)
+    {
+        num=prompt("값 입력");
+        num=Number(num);
+
+        if(num==0)
+        {
+            break;
+        }
+
+        arr.push(num);   
+    }
+
+    for(var i=0; i<arr.length; i++)
+    {
+        sum = sum + arr[i];
+    }
+    document.write("배열의 길이는:"+arr.length,"<br>");
+    document.write("배열의 합은:"+sum,"<br>");
+
+    //<------break하고 여기로 옴
+
+    //[]
+    //arr.push(10)
+    //[10]
+    //arr.push(20)
+    //[10,20]
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

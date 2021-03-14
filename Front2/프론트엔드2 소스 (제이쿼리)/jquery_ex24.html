@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            //slice메서드
+            //자르는 건데
+            //범위
+            let style={ 
+                "background":"red",
+                "color":'blue'
+            }
+            $("#menu>li").slice(1,4).css(style);
+            //1번째 부터, 4번째 미만
+            //몇번째부터 몇번째까지
+        });
+    </script>
+    
+</head>
+<body>
+    <ul id="menu">
+        <li>내용1</li><!--0번째-->
+        <li>내용2</li><!--1번째-->
+        <li>내용3</li><!--2번째-->
+        <li>내용4</li><!--3번째-->
+        <li>내용5</li><!--4번째-->
+    </ul>
+</body>
+</html>
+

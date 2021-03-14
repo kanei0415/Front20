@@ -1,0 +1,9 @@
+4일차 일지
+
+로또복권 만들기
+영화관람 과제
+display속성
+block;
+inline;
+inline-block;
+구분을 잘하자

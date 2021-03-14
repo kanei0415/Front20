@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   <!--
+        focus, blur
+        focus - 포커싱 되었을때, 활성화 되었을때
+        blur - 희미한...비활성화 되었을때
+    -->
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+            $("#user_id_1, #user_pw_1").on("focus",function(){
+                $(this).css({"background":"pink"});
+            //아이디가 user_id_1 그리고 user_pw_1인 곳에
+            //on메소드 등록 방식으로 이벤트 등록한다.
+            //focus되었을때 두번째 값인 익명함수 실행
+            //이벤트가 발생한곳의 배경을 핑크색으로 바꾼다.
+            });
+
+            $("#user_id_1, #user_pw_1").on("blur",function(){
+                $(this).css({"background":"none"});
+            //아이디가 user_id_1 그리고 user_pw_1인 곳에
+            //on메소드 등록 방식으로 이벤트 등록한다.
+            //focus되었을때 두번째 값인 익명함수 실행
+            //이벤트가 발생한곳의 배경을 없앤다.
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action>
+        <p>
+            <label for="user_id_1">ID</label>
+            <input type="text" name="user_id_1" id="user_id_1">
+        </p>
+        <p>
+            <label for="user_pw_1">PW</label>
+            <input type="password" name="user_pw_1" id="user_pw_1">
+        </p>
+    </form>
+</body>
+</html>
+

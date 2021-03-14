@@ -1,0 +1,72 @@
+#container>.login_form
+{
+    width:460px;
+    height:224px;
+
+    background: darkcyan;
+
+    position: absolute;
+    left:150px;
+}
+
+#container>.login_form>.id_area
+{
+    width:460px;
+    height:47px;
+
+    background: darkgray;
+}
+
+#container>.login_form>.id_area>.input_row
+{
+    width:412px;
+    height:29px;
+
+    background: firebrick;
+}
+
+#container>.login_form>.id_area>.input_row>.input_box
+{
+    width:411px;
+    height:28px;
+
+    display:block;
+    background: forestgreen;
+}
+
+
+#container>.login_form>.pw_area
+{
+    width:460px;
+    height:47px;
+
+    background: darkkhaki;
+}
+
+#container>.login_form>.pw_area>.input_row
+{
+    width:412px;
+    height:29px;
+
+    background: firebrick;
+}
+
+#container>.login_form>.pw_area>.input_row>.input_box
+{
+    width:411px;
+    height:28px;
+
+    display:block;
+    background: forestgreen;
+}
+
+#container>.login_form>#login
+{
+    width:458px;
+    height:54px;
+    
+    color:white;
+    background: #03C75A;
+
+    border: none;
+}

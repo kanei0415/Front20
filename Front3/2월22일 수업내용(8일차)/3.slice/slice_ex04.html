@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    var arr=['A','B','C','D','E'];
+    var del_index=2;
+    var left=arr.slice(0,del_index);//['A','B']
+    var right=arr.slice(del_index+1);//['D','E']
+    var new_arr = left.concat(right);
+    console.log(new_arr);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

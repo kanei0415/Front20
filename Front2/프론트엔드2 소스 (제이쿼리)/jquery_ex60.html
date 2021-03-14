@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>
+        let audio=null;
+    //익명함수 (이름이 없는 함수)
+        $(window).on("load",function(){
+            audio=new Audio();//오디오 객체 생성
+            audio.src="./audio/my_piano1.mp3";
+            //오디오 객체에 파일 지정
+        });
+
+        function start_music(){
+            audio.play();
+        }
+
+        function pause_music(){
+            audio.pause();
+        }
+
+        function stop_music(){
+            audio.pause();
+            audio.currentTime=0;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="start_music()">시작</button>
+    <button onclick="pause_music()">일시정지</button>
+    <button onclick="stop_music()">끄기</button>
+</body>
+</html>
+

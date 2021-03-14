@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    var json_arr=new Array(0);
+    var json_obj=null;
+    var num=0;
+
+    var name='';
+    var age=0;
+    num=prompt("몇명의 JSON객체를 입력받겠습니까?");
+    num=Number(num);
+
+    for(var i=1; i<=num; i++)
+    {
+      name=prompt(i+"번째 이름 입력");
+      age=prompt(i+"번째 나이 입력");
+      json_obj=new Object();
+      json_obj.name=name;
+      json_obj.age=age;
+      json_arr.push(json_obj);
+    }
+    console.log(json_arr);
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

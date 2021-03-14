@@ -1,0 +1,32 @@
+div
+{
+    width:100px;
+    height:100px;
+    position: absolute;
+}
+
+/*
+div중에서
+클래스 이름이 x인것
+*/
+div.x
+{
+    background: red;
+    top:20px;
+    left:200px;
+    z-index: 3;
+}
+div.y
+{
+    background: green;
+    top:50px;
+    left:260px;
+    z-index: 2;
+}
+div.z
+{
+    background: blue;
+    top:80px;
+    left:230px;
+    z-index: 1;
+}

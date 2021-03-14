@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+   <script>//익명함수 (이름이 없는 함수)
+    $(function(){//이문장 자체가 호출이다.
+       //after - 뒤에 추가
+       //before - 앞에 추가
+        $("#wrap>p:eq(2)").after("<p>After</p>");
+        //wrap내부의 p태그 중 2번째 인덱스 요소 뒤에
+        //<p>After</p>추가
+
+        $("#wrap>p:eq(1)").before("<p>before</p>");
+        //wrap내부의 p태그 중 1번째 인덱스 요소 앞에
+        //<p>before</p>추가
+    });
+</script>
+
+</head>
+<body>
+    
+    <div id="wrap">
+        <p>내용1</p>
+    <!--<p>before</p>-->
+        <p>내용2</p>
+        <p>내용3</p>
+    <!--<p>After</p>-->
+    </div>
+
+</body>
+</html>
+

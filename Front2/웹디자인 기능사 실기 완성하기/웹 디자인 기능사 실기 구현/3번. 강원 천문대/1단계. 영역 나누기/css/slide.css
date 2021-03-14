@@ -1,0 +1,12 @@
+#slide{
+    overflow: hidden;
+    position: relative;
+}
+
+#slide_contents{
+    
+    position: absolute;
+    top:0;
+    left:0;
+    
+}

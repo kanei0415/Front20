@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    //필터 함수
+    //
+    var users =[
+      {id:2018038018,name:'Jisung Park',age:23},
+      {id:2017038018,name:'JooYoung Park',age:22},
+      {id:2016038018,name:'HeungMin Son',age:21},
+      {id:2015038018,name:'SeungWoo Lee',age:20}
+    ]
+
+    var id=prompt("삭제할 학번 입력");
+    //2016038018
+    id=Number(id);
+
+    var new_users = users.filter(user=>user.id!=id);
+    //우리가 입력한 id가 아닌 요소만 다 통과...
+    console.log(new_users);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

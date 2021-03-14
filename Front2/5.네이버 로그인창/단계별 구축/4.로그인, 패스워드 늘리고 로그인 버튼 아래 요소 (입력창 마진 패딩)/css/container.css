@@ -1,0 +1,136 @@
+#container>.login_form
+{
+    width:460px;
+    height:224px;
+
+    background: darkcyan;
+
+    position: absolute;
+    left:150px;
+}
+
+#container>.login_form>.id_area
+{
+    width:460px;
+    height:47px;
+
+    background: darkgray;
+
+    /*
+    나중에 입력창을 활성화 하면
+    경계선 녹색으로 만들어지게
+    border:1px solid green;
+    */ 
+
+    padding-left:5px;
+    padding-top:5px;
+    box-sizing: border-box;
+
+    margin-bottom:10px;
+}
+
+#container>.login_form>.id_area>.input_row
+{
+    width:412px;
+    height:29px;
+
+    background: firebrick;
+}
+
+#container>.login_form>.id_area>.input_row>.input_box
+{
+    width:411px;
+    height:28px;
+
+    display:block;
+    background: forestgreen;
+}
+
+.id_area>.input_row>.input_box>#id
+{
+    width:411px;
+    height:28px;
+    background: white;
+
+    font-size:14px;
+    color:black;
+}
+
+
+#container>.login_form>.pw_area
+{
+    width:460px;
+    height:47px;
+
+    background: darkkhaki;
+
+     /*
+    나중에 입력창을 활성화 하면
+    경계선 녹색으로 만들어지게
+    border:1px solid green;
+    */ 
+    padding-left:5px;
+    padding-top:5px;
+    box-sizing: border-box;
+
+    margin-bottom:10px;
+}
+
+#container>.login_form>.pw_area>.input_row
+{
+    width:412px;
+    height:29px;
+
+    background: firebrick;
+}
+
+#container>.login_form>.pw_area>.input_row>.input_box
+{
+    width:411px;
+    height:28px;
+
+    display:block;
+    background: forestgreen;
+}
+
+.pw_area>.input_row>.input_box>#pw
+{
+    width:411px;
+    height:28px;
+    background: white;
+
+    font-size:14px;
+    color:black;
+}
+
+#container>.login_form>#login
+{
+    width:458px;
+    height:54px;
+    
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    background: #03C75A;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.check_info
+{
+    width:458px;
+    height:40px;
+    background: cornflowerblue;
+}
+
+.check_info>.login_check
+{
+    background: crimson;
+    float:left;
+}   
+
+.check_info>.pc_check
+{
+    background: cyan;
+    float:right;
+}

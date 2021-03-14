@@ -1,0 +1,24 @@
+ul
+{
+    width:500px;
+    height:500px;
+    background: red;
+}
+
+ul>li/*ul li*/
+{
+    margin-bottom: 20px;
+}
+
+ul>li>a /*  ul하위li하위a지정 */
+{/*anchor태그는 inline속성이다.*/
+    display:block;
+    width:100px;
+    height:100px;
+    background: aqua;
+}
+
+/*emmet*/
+/*
+ul>li*3>a 
+*/

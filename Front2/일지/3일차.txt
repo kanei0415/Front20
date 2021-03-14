@@ -1,0 +1,7 @@
+prompt
+Number
+confirm
+alert
+if
+if~else
+if~else if~else

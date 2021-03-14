@@ -1,0 +1,121 @@
+#login_header
+{
+    width:400px;
+    height:156px;
+    background: blue;
+
+    padding-top: 76px;
+    padding-bottom: 60px;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+#login_header>img
+{
+    width:251px;
+    height:20px;
+}
+
+form>input
+{
+    width:340px;
+    height:50px;
+
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+    color:gray;
+
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+form>#login_btn
+{
+    background: black;
+    color:white;
+    font-size:16px;
+    
+    width:340px;
+    height:60px;
+
+    border: none;
+}
+
+#auto_login
+{
+    width:400px;
+    height:30px;
+    background: chartreuse;
+
+    padding-left: 30px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+#auto_login>input
+{
+    width:18px;
+    height:18px;
+    background: gray;
+}
+
+#auto_login>span
+{
+    color:gray;
+    font-size:14px;
+
+    position: relative;
+    top:-3px;
+    left:5px;
+}
+
+#bot_menu
+{
+    width:400px;
+    height:70px;
+    background: coral;
+}
+
+#bot_menu>ul
+{
+    position: relative;
+    top:20px;
+    left:30px;
+}
+
+#bot_menu>ul>li
+{   
+    float:left;
+    margin-right:30px;
+    position: relative;
+}
+
+#bot_menu>ul>li>a
+{   
+    color:gray;
+}
+
+.bar
+{
+    width:1px;
+    height:13px;
+    background: gray;
+    display:block;
+
+    
+}
+
+#bot_menu>ul>li:first-child>span
+{
+    position: absolute;
+    left:80px;
+    top:6px;
+}
+
+#bot_menu>ul>li:nth-child(2)>span
+{
+    position: absolute;
+    left:100px;
+    top:6px;   
+}

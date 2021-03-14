@@ -1,0 +1,55 @@
+
+
+.japan, .newzealand, .china, .hongkong, .uk, .cambodia, .vietnam
+{
+    background: url("../images/icon_set1.png") no-repeat;
+}
+
+.japan
+{
+    width:24px;
+    height:24px;
+    background-position: 0 -300px;
+}
+
+.newzealand
+{
+    width:24px;
+    height:24px;
+    background-position: -40px -300px;
+}
+
+.china
+{
+    width:24px;
+    height:24px;
+    background-position: -80px -300px;
+}
+
+.hongkong
+{
+    width:24px;
+    height:24px;
+    background-position: -120px -300px;
+}
+
+.uk
+{
+    width:24px;
+    height:24px;
+    background-position: -160px -300px;
+}
+
+.cambodia
+{
+    width:24px;
+    height:24px;
+    background-position: -200px -300px;
+}
+
+.vietnam
+{
+    width:24px;
+    height:24px;
+    background-position: -240px -300px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        //동적 2차원 배열
+        let arr = new Array();
+        let element = null;
+        let num=1;
+        //2행 3열
+        //행열 입력받고
+
+        let row = prompt("행 입력");
+        let col = prompt("열 입력");
+        
+        row = Number(row);
+        col = Number(col);
+
+        for(let i=1; i<=row; i++)
+        {
+            element = new Array();
+            for(let j=1; j<=col; j++)
+            {
+                //길이가 열만큼인 1차원 배열을 만들어서
+                //arr에 push한다.
+                element.push(num);
+                num++;
+                //element = [1,2,3];
+                //element = [4,5,6];
+            }
+            arr.push(element);
+            element=null;
+        }
+        //2행 3열...
+        //길이가 3인 1차원 배열 2개 만들어서 붙이면
+        //그게 2행 3열 2차원 배열이 된다.
+
+        for(let i=0; i<=1; i++)
+        {
+            for(let j=0; j<=2; j++)
+            {
+                document.write(arr[i][j]+" ");
+            }
+            document.write("<br>");
+        }
+
+        /*
+        arr =[
+            [1,2,3],
+            [4,5,6]
+        ]
+        */
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

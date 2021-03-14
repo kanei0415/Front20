@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <!--
+        대수의법칙
+        큰수의법칙 big num's law
+        1/6
+        -16.6%
+        6번 던지면 안나오지만
+        100만번...
+    -->
+    <script>
+        let dice=[0,0,0,0,0,0,0];
+        let dice_per = [0,0,0,0,0,0,0];
+        let count = prompt("횟수 입력");
+        let num=0;
+        count=Number(count);
+
+        for(let i=1; i<=count; i++){
+            num=Math.ceil(Math.random()*6);//눈금 1~6
+            //Math.random()
+            //0< 값 < 1
+            //0.....000001 ~ 0.99999999 - Math.random()
+            //0.....000006 ~ 5.99999999 - Math.random()*6
+            //1~6 - Math.ceil(Math.random()*6);
+            //1~6
+
+            //올림 함수인 ceil을 이용해서 정수로 변환해줌
+            //ceiling 천장 - 올림함수
+            //Math.ceil(0.1)->1
+            dice[num]++;//증가 연산자
+            //dice=[0,0,0,0,0,0,0];
+
+            //1증가
+            //dice[num]=dice[num]+1;
+        }
+        for(let i=1; i<=6; i++){
+            dice_per[i]=(dice[i]/count)*100;
+        }
+
+        for(let i=1; i<=6; i++){
+           document.write(i+"눈금 횟수:"+dice[i]+",확률:"+dice_per[i]+"%","<br>");
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

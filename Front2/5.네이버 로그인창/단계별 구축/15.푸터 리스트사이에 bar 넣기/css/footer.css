@@ -1,0 +1,41 @@
+#footer
+{
+    position: absolute;
+    top:630px;
+    left:20%;
+
+    width:465px;
+    height:67px;
+    background: magenta;
+}
+
+#footer>ul
+{
+    width:565px;
+    height:33px;
+    background: maroon;
+}
+
+#footer>ul>li
+{
+    float:left;
+    margin-right:10px;
+}
+
+#footer>ul>li:nth-child(2)
+{
+    font-weight:bold;
+}
+
+#footer>ul>li>a
+{
+    color:black;
+    font-size:12px;
+}
+
+#footer>.copyright
+{
+    width:565px;
+    height:33px;
+    background: mediumorchid;
+}

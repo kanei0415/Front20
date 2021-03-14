@@ -1,0 +1,26 @@
+#box1
+{
+    border:1px solid black;
+    background: red;
+    width:100px;
+    height:100px;
+    display:inline;
+}
+
+#box2
+{
+    border:1px solid black;
+    background: green;
+    width:100px;
+    height:100px;
+    display:inline;
+}
+
+#box3
+{
+    border:1px solid black;
+    background: blue;
+    width:100px;
+    height:100px;
+    display:inline;
+}

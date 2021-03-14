@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+div
+{
+    width:100%;
+    height:100px;
+    margin-bottom: 10px;
+}
+
+.grad_bot
+{
+    background: linear-gradient(to bottom,yellow,red);
+}
+
+.grad_top
+{
+    background: linear-gradient(to top,yellow,red);
+}
+
+.grad_right
+{
+    background: linear-gradient(to right,yellow,red);
+}
+
+.grad_left
+{
+    background: linear-gradient(to left,yellow,red);
+}

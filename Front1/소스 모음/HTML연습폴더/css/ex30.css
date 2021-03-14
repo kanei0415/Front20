@@ -1,0 +1,17 @@
+#div1
+{
+    width:100px;
+    height:100px;
+    background: red;
+    border-radius: 70%;
+    /* 경계선 반지름 */
+}
+
+#div2
+{
+    width:100px;
+    height:100px;
+    background: green;
+    border-radius: 70%;
+    /* 경계선 반지름 */
+}

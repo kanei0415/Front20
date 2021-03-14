@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        //논리 연산자
+        //논리값으로 연산
+        //논리 - true, false
+        //논리 연산자는 true, false로 연산하는 연산자
+
+        // && - 논리 and
+        // || - 논리 or
+        // ! - 논리 not
+        //!false -> true
+        //!true -> false
+
+        //진리표 truth table
+        //연산결과를 적어놓은 표
+
+        //&& - 논리곱, 결합의의미, 그리고
+        //false - 0, true - 1
+        //false  && false -> false
+        //true  && false -> false 
+        //false  && true -> false
+        //true  && true -> true
+
+        //|| - 논리합, 선택의의미, 또는
+        //false - 0, true - 1
+        //false || false -> false
+        //true  || false -> true 
+        //false || true -> true
+        //true  || true -> true
+
+        //0만 거짓...
+        //-2,-1,1,2,3,4.... 다 true
+
+        var num1=9;
+        var num2=2;
+        var num3=5;
+
+        var result=0;
+        //대입연산자는 방향이 오른쪽에서 왼쪽
+        //3+4
+        result = (num1==num2) && (num2!=num3);  
+        //result = false && (num2!=num3);
+        //result = false && true;
+        //result = false;
+        document.write(result,"<br>");
+
+        result = (num1==num2) || (num2!=num3);
+        //result = false || (num2!=num3);
+        //result = false || true;
+        //result = true; 
+        document.write(result,"<br>");
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

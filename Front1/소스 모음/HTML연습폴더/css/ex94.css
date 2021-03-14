@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.box
+{
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+#one
+{
+    position: fixed;
+    top:80px;
+    left:10px;
+    background: blue;
+}
+
+.outer
+{
+    width:500px;
+    height:300px;
+    
+    overflow: scroll;
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+

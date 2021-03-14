@@ -1,0 +1,21 @@
+#contents>p 
+{
+    color:red;
+}
+/*
+#contents>p 
+cotents한단계 밑에 p만
+*/
+
+/*
+#contents p
+{
+    color:red;
+}
+*/
+
+/*
+#contents p 
+cotents밑에 p 
+몇단계든 다...
+*/

@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.safe_notice
+{
+    width:320px;
+    height:30px;
+    font-size: 12px;
+
+    background: linear-gradient(96deg,#0C93ED,#6B87E7);
+
+    border-radius: 5px;
+
+    padding-left: 5px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.safe_notice>img
+{
+    width:11px;
+    height:11px;
+}

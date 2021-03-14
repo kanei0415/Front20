@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            //siblings - 형제, 자매
+            //이전, 이후 다 선택
+            $("#me").siblings().css({
+                "background":"yellow",
+                "border":"2px dashed blue"
+            });
+
+        });
+    </script>
+    
+</head>
+<body>
+    <ul>
+        <li>리스트1</li><!--siblings 선택-->
+        <li id="me">리스트2</li><!--나--> <!--기준점-->
+        <li>리스트3</li> <!--siblings 선택-->
+    </ul>
+
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+      
+            $(".btn1").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+
+                         //hide, show번갈아 가면서
+                $(".box").toggle();
+           
+            });
+
+        });
+        //콜백함수 : 어떤 특정한 조건이 만족되면 실행되는 함수
+        //대표적인 setInterval 2초뒤에 실행, 2초뒤에 실행...
+    </script>
+</head>
+<body>
+    <p>
+        <button class="btn1">toggle</button>
+    </p>
+
+    <div class="box">
+        <div class="content">
+            html+css, javascript, jquery, server, ajax, react
+        </div>
+    </div>
+</body>
+</html>
+

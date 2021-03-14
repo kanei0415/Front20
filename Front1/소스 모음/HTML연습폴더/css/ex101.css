@@ -1,0 +1,32 @@
+div
+{
+    border:1px solid red;
+    margin:2px;
+}
+/*
+line-height는
+글자 가독성을 위해서
+글자가 차지하는 세로 영역의 길이를
+늘릴수 있다.
+*/
+.ver1
+{
+    line-height:normal;
+    /*라인의 높이가
+    글자크기의 1.2배*/
+}
+
+.ver2
+{
+    line-height:1.6;
+    /*라인의 높이가
+    글자크기의 1.2배*/
+}
+
+.ver3
+{
+    line-height:2.0;
+    /*라인의 높이가
+    글자크기의 2.0배*/
+}
+

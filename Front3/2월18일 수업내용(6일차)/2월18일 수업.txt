@@ -1,0 +1,12 @@
+
+-subject 컴포넌트 복구하고 changemode 함수 사용
+
+-li에 unique key props 설정
+
+-애로우 함수 사용
+
+-onChange이벤트로 입력창에 입력한 값을 state값으로 변경
+
+-onChange이벤트와 push함수로
+입력창에 입력한 값을 state추가한다음
+list배열에 추가하기

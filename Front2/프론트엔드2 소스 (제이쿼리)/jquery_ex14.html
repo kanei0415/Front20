@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            
+            var style_1={
+                "background":"red",
+                "border":"2px solid blue",
+                "width":"100px",
+                "height":"100px",
+            }
+
+            var style_2={
+                "background":"green",
+                "border":"2px solid blue",
+                "width":"100px",
+                "height":"100px",
+            }
+
+            $("#div1").css(style_1);
+            $("#div2").css(style_2);
+
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+
+    <div id="div2">
+        
+    </div>
+
+</body>
+</html>
+

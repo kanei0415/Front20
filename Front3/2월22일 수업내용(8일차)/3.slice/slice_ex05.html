@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    var arr=['A','B','C','D','E'];
+    var del_index=0;
+
+    var del_alphabet=prompt("삭제할 알파벳 입력");
+    
+    for(var i=0; i<arr.length; i++)
+    {
+      if(arr[i]==del_alphabet)
+      {
+        del_index=i;
+      }
+    }
+
+    var left=arr.slice(0,del_index);//['A','B','C']
+    var right=arr.slice(del_index+1);//['E']
+    var new_arr = left.concat(right);//['A','B','C','E']
+    console.log(new_arr);
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    /*
+    글자 색깔은 물려받는다.
+    */
+}
+
+#wrap{
+    width:1200px;
+    height:700px;
+    background: #ffffff;
+    margin:0 auto;
+    color:#333333;
+
+    z-index: 1;
+    position: relative;
+}
+
+#header{
+    width:1200px;
+    height:100px;
+    background: #ffffff;
+
+    z-index: 2;
+    position: relative;
+}
+
+#slide{
+    width:1200px;
+    height:300px;
+    background: #ffffff;
+}
+
+#contents{
+    width:1200px;
+    height:200px;
+    background: #ffffff;
+}
+
+#footer{
+    width:1200px;
+    height:100px;
+    background: #ffffff;
+}

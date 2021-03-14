@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko"> <!--언어 한국어-->
+<html>
+<head>
+    <!--head:머리-->
+    <meta charset="UTF-8">
+    <!-- meta태그 -->
+    <!-- charset에는 문자를 읽어들이는 인코딩 방식을 설정-->
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/header.css"rel="stylesheet"><link href="./css/slide.css"rel="stylesheet">
+    <link href="./css/contents.css"rel="stylesheet">
+    <link href="./css/footer.css"rel="stylesheet">
+    
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">
+                <img src="./images/logo.png">
+            </div>
+            <nav class="nav">
+                
+                <!--GNB
+                :Global Navigation Bar-->
+                
+                <!--LNB
+                :Local Navigation Bar-->
+                <ul class="gnb">
+                    <li>
+                       <a href="#">탑</a>
+                        <ul class="lnb">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">아우터</a>
+                        <ul class="lnb">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">팬츠</a>
+                        <ul class="lnb">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#">악세서리</a>
+                        <ul class="lnb">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
+        </header>
+        
+        <div id="slide">
+            <!--
+                어떤 유형이든지 다 3장
+                거의 대부분 가로 1200, 세로 300
+                넘기는 방식이...
+                가로 방향 슬라이드?
+                세로 방향 슬라이드?
+                fadeIn, fadeOut
+                (스르륵 사라지고,스르륵 나타난다)
+            -->
+            <div id="slide_contents">
+                <img src="./images/slide1.jpg" alt="백화점 탑 브랜드 대전">
+                <img src="./images/slide2.jpg" alt="삼성화재 보험료">
+                <img src="./images/slide3.jpg" alt="장바구니 쿠폰">
+            </div>
+
+        </div>
+        
+        <div id="contents">
+            <div id="cont1">
+                
+                <!--탭 버튼 2개-->
+                <!--탭 컨텐츠 2개-->
+                <div class="tab">
+
+                    <div class="tab_btn">
+                        <a href="#">
+                            공지사항
+                        </a>
+                        <a href="#">
+                            갤러리
+                        </a>
+                    </div>
+
+                    <div class="tab_contents">
+                        
+                        <div>
+                            <ul class="notice_list">
+                                <li><a href="#">  SNS비회원주문하기 종료 안내 <span>[2020-12-01]</span> </a></li>
+                                <li><a href="#">  구매이용약관 개정 공지의 건 <span>[2020-12-01]</span> </a></li>
+                                <li><a href="#">  V센터 종료 안내 <span>[2020-12-01]</span> </a></li>
+                                <li><a href="#">  개인정보처리방침 개정 안내 <span>[2020-12-01]</span> </a></li>
+                                <li><a href="#">  데이터프리 서비스 종료 안내 <span>[2020-12-01]</span> </a></li>
+                            </ul>
+                        </div>  
+
+                        <div>
+                            <ul class="gallery_list">
+                                <li><a href="#"><img src="./images/gallery1.jpg" alt="갤러리 이미지1"></a></li>
+                                <li><a href="#"><img src="./images/gallery2.jpg" alt="갤러리 이미지2"></a></li>
+                                <li><a href="#"><img src="./images/gallery3.jpg" alt="갤러리 이미지3"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div id="cont2">
+                <img src="./images/banner_img.jpg">
+            </div>
+            
+            <div id="cont3">
+                <img src="./images/shortcut_img.jpg">
+            </div>
+        </div>
+        
+        <footer id="footer">
+            <div class="logo">
+                <img src="./images/logo2.png">
+            </div>
+            <div class="copyright">
+                <address>
+                    서울시 강남구 테헤란로 152 (역삼동 강남파이낸스센터) 대표이사 :변광윤<br>
+                    사업자 등록번호 : 220-81-83676 통신판매업신고 : 강남 10630호
+                </address>
+            </div>
+            <div class="sns">
+                <ul class="sns_list">
+                    <li><a href="#"><img src="./images/fb.png"></a></li>
+                    <li><a href="#"><img src="./images/insta.png"></a></li>
+                    <li><a href="#"><img src="./images/kakao.png"></a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>

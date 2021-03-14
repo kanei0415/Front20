@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script>
+        
+        //저금 프로그램
+        //입력받은 금액을 계속 더하게...
+        //사용자가 0을 입력하면 종료하게...
+
+        var num=0; //입력받는 금액
+        var total=0; //저금 총 금액
+        //do~while쓰는 목적
+        //사용자 입력을 무조건 1번이상 받게 하겠다...
+        //이런 상황...
+        
+        do
+        {//0이 아닌 100원,200원 이런건 하는데...
+        //0이면 안하겠다...
+            num=prompt("저금 금액입력");
+            num=Number(num);
+            total = total + num; //금액 누적
+            //total값에 num값을 더해서...
+            //total공간에 넣는다.
+            document.write("저금 총 금액:"+total,"<br>");
+            //우리가 저금을 끝내는 순간이 언제?
+            //0입력하면 끝내게 하자...
+        }while(num!=0);//num 이 0이 아닌 동안 한다...
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
+
+

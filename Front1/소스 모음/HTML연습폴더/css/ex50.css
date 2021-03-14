@@ -1,0 +1,64 @@
+body
+{
+    background: cornflowerblue;
+}
+
+#outer_wrap
+{
+    width:600px;
+    height:600px;
+    background: blueviolet;
+
+    margin-left:50px;
+    margin-top:50px;
+
+    /*
+    position: relative;
+    */
+}
+
+#inner_wrap
+{
+    width:400px;
+    height:400px;
+    background: aquamarine;
+
+    margin-left:50px;
+    margin-top:50px;
+
+    /*
+    position: relative;
+    */
+    position: relative;
+}
+
+#box1
+{
+    width:100px;
+    height:100px;
+    background: red;
+
+    /*
+    absolute는
+    자기 상위 요소 중에서
+    relative나 absolute가 있으면
+    그것을 기준으로
+    */
+    position: absolute;
+    left:20px;
+    top:20px;
+}
+
+#box2
+{
+    width:100px;
+    height:100px;
+    background: green;    
+}
+
+#box3
+{
+    width:100px;
+    height:100px;
+    background: blue;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    var json_arr=new Array(0);
+    //JSON배열에 들어가는 하나 하나의 원소는 객체다!
+    
+    var json_obj=null;
+    //JSON배열에 들어가는 하나의 원소 (하나의 객체)
+
+    json_obj=new Object();
+    json_obj.name="이민호";
+    json_obj.age=20;
+    //{name:"이민호",age:20}
+    json_arr.push(json_obj);
+    
+    json_obj=new Object();
+    json_obj.name="정채연";
+    json_obj.age=21;
+    //{name:"정채연",age:21}
+    json_arr.push(json_obj);
+    
+    console.log(json_arr);
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

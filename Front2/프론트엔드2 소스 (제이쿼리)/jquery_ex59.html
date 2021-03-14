@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <link rel="stylesheet" type="text/css" href="./css/jquery_ex59.css">
+    <script src="./js/jquery.min.js">
+    </script>
+    <!--
+        keydown
+        키가 눌렸을때 이벤트 발생시킨다.
+    -->
+    <script>//익명함수 (이름이 없는 함수)
+
+        let audio=null;
+
+        $(function () {
+            
+            function key_play(direct)
+            {
+
+                if(direct=='A')
+                {
+                    audio.src="./audio/1_do.wav";
+                }
+                else if(direct=='S')
+                {
+                    audio.src="./audio/2_re.wav";
+                }
+                else if(direct=='D')
+                {
+                    audio.src="./audio/3_mi.wav";
+                }
+                else if(direct=='F')
+                {
+                    audio.src="./audio/4_pa.wav";
+                }
+                else if(direct=='G')
+                {
+                    audio.src="./audio/5_sol.wav";
+                }
+                else if(direct=='H')
+                {
+                    audio.src="./audio/6_ra.wav";
+                }
+                else if(direct=='J')
+                {
+                    audio.src="./audio/7_si.wav";
+                }
+                else if(direct=='K')
+                {
+                    audio.src="./audio/8_do.wav";
+                }
+
+                audio.play();
+            }
+
+            $(document).on("keydown", keyEventFnc);
+
+            function keyEventFnc(e) {
+
+                var direct = "";
+                //눌려진 키 정보를 판단
+                switch (e.keyCode) {
+                    case 65:
+                        direct = "A";//왼쪽키면 값만 넣고
+                        break;//나간다.
+                    case 83:
+                        direct = "S";
+                        break;
+                    case 68:
+                        direct = "D";
+                        break;
+                    case 70:
+                        direct = "F";
+                        break;
+                    case 71:
+                        direct = "G";
+                        break;
+                    case 72:
+                        direct = "H";
+                        break;
+                    case 74:
+                        direct = "J";
+                        break;
+                    case 74:
+                        direct = "K";
+                        break;
+                }
+
+                key_play(direct);
+                //눌려진 키 정보를 받아서
+                //파일 재생
+
+                if (direct) {//키가 눌렸다면?
+                    $("#user_id").val(direct);
+                }
+            }
+        });
+
+        $(window).on("load",function(){
+            audio=new Audio();
+        })
+
+    </script>
+</head>
+
+<body>
+    <p>
+        <input type="text" name="user_id" id="user_id">
+    </p>
+
+    <div id="do">도(A)</div>
+    <div id="re">레(S)</div>
+    <div id="mi">미(D)</div>
+    <div id="pa">파(F)</div>
+    <div id="sol">솔(G)</div>
+    <div id="ra">라(H)</div>
+    <div id="si">시(J)</div>
+    <div id="do2">도(K)</div>
+
+</body>
+
+</html>

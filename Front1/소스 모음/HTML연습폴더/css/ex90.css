@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.box
+{
+    display: inline-block;
+    width:100px;
+    height:100px;
+    background: red;
+}
+
+#two
+{
+    position: static;
+    /*
+    요소들이 static으로 되어있어서
+    움직이지 않게 되어있다.
+
+    relative나 absolute를 주고
+    위치를 조절하면 이동한다.
+    */
+    top:20px;
+    left:20px;
+    background: blue;
+}

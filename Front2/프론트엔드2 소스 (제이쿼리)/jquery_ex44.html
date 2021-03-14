@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+
+                      //on메서드의 첫번째 매개변수에 click문자열을 넘겨준다.
+            $(".btn1").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+                $(".box").hide();
+            });
+
+            $(".btn2").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+                $(".box").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <button class="btn1">hide</button>
+        <button class="btn2">show</button>
+    </p>
+
+    <div class="box">
+        <div class="content">
+            html+css, javascript, jquery, server, ajax, react
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+#carWrap
+{
+    width:1000px;
+    height:300px;
+    background-color: aqua;
+}
+
+#carWrap>#carLogo
+{
+    float:left;
+    width:800px;
+    height:300px;
+    background-color: aquamarine;
+}
+
+#carWrap>#carLogo>img
+{
+    width:800px;
+    height:300px;
+}
+
+#right_side
+{
+    float:left;
+    width:200px;
+    height:300px;
+    background-color: azure;
+}
+
+#right_side>#carName
+{
+    width:200px;
+    height:100px;
+    background-color: beige;
+}
+
+
+#right_side>#carPrice
+{
+    width:200px;
+    height:100px;
+    background-color: burlywood;
+}
+
+#right_side>#carYear
+{
+    width:200px;
+    height:100px;
+    background-color: blueviolet;
+}

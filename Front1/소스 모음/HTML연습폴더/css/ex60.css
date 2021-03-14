@@ -1,0 +1,46 @@
+/*
+문법은 누구나 다한다.
+시간문제일뿐인데
+
+어떤사람은 1달만에 다 한다.
+어떤사람은 2달만에 다 한다.
+개인차는 있는데...
+이걸 줄이는 시간투자
+*/
+*{
+    margin:0;
+    padding:0;
+}
+
+#box1
+{
+    width:100px;
+    height:100px;
+    background: red;
+
+    position: absolute;
+    top:100px;
+    left:100px;
+}
+
+#box2
+{
+    width:100px;
+    height:100px;
+    background: blue;
+    
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+
+#box3
+{
+    width:100px;
+    height:100px;
+    background: green;
+
+    position: absolute;
+    top:75px;
+    left:75px;
+}

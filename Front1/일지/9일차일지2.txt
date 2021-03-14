@@ -1,0 +1,15 @@
+오늘 수업할 내용
+
+-audio
+-video
+-embed
+-동영상 다운로드
+-mp4변환
+-웹 기초 이론 (서버, 클라이언트, http, DNS)
+-닷홈 웹 호스팅 방법
+-FILEZILA 사용법
+-ftp에 대하여
+
+http://naver.me/GpPIFP1z
+프론트 엔드 공유 폴더
+

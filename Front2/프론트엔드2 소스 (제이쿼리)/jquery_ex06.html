@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            $(".div1").css(
+                {"width":"100px",
+                 "height":"100px",
+                 "background":"red",
+                 "border":"2px solid blue"}
+                );
+            //중괄호써서 여러 속성을 한꺼번에 적용
+            //여긴 함수 호출 1번...
+            //함수는 적게부를수록 좋다.
+            //재귀함수...1000번만 불러도 limit exceeded
+            //무한루프는 100만번 돌려도 괜찮다.
+            //
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+
+</body>
+</html>
+

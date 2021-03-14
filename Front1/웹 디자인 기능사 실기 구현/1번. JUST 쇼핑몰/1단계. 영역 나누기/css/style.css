@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+    /*
+    상위요소 지정한 특성을
+    상속해서 사용한다.
+    
+    */
+}
+
+body{
+    position: relative;
+    z-index: 1;
+
+    color:#222328;
+    background: #fff;
+}
+
+#wrap{
+    width:1200px;
+    height:700px;
+    background: #ffffff;
+    margin:0 auto;
+    /*
+    위아래 0
+    좌우는 자동
+    좌우는 적절하게 반씩 나눠갖는다.
+    */
+}
+
+#header{
+    width:1200px;
+    height:100px;
+    background: #ffffff;
+
+    position: relative;
+    z-index: 2;
+}
+
+#slide{
+    width:1200px;
+    height:300px;
+    background: #ffffff;
+}
+
+#contents{
+    width:1200px;
+    height:200px;
+    background: #ffffff;
+}
+
+#footer{
+    width:1200px;
+    height:100px;
+    background: #ffffff;
+}
+

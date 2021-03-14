@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            //prev 메서드 - 형,누나,언니
+            $("#me").prev().css({
+                "background":"yellow",
+                "border":"2px dashed blue"
+            });
+            //next 메서드 - 동생
+            $("#me").next().css({
+                "background":"red",
+                "border":"2px dashed green"
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <ul><!--부모--> <!--parent로 선택-->
+        <li>리스트1</li><!--형--> <!--prev로 선택-->
+        <li id="me">리스트2</li><!--나--> <!--기준점-->
+        <li>리스트3</li><!--동생--> <!--next로 선택-->
+    </ul>
+
+</body>
+</html>
+

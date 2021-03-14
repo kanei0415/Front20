@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+   <script>//익명함수 (이름이 없는 함수)
+    $(function(){//이문장 자체가 호출이다.
+       //click 이벤트
+        $(".btn1").click(function(){
+            $(".btn1").parent().next()
+            .css({"color":"red"});
+            //btn1클래스의 부모의 다음요소
+        });
+        //btn1클래스(버튼) 클릭하면 내부의 익명함수가 실행
+
+        //on 메서드 등록방식
+        //그룹 메서드 등록방식
+        //여러개의 메서드
+        $(".btn2").on({
+           
+            //마우스 오버 (마우스 위에 떠있을때)
+            "mouseover":function(){
+                $(".btn2").parent().next()
+                .css({"color":"red"});
+            } ,
+
+            //마우스 아웃 (마우스 나갔을때)
+            "mouseout":function(){
+                $(".btn2").parent().next()
+                .css({"color":"black"});
+            }   
+        });
+    });
+</script>
+
+</head>
+<body>
+
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>내용1</p> <!--$(".btn1").parent().next()-->
+
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>내용2</p>
+
+</body>
+</html>
+

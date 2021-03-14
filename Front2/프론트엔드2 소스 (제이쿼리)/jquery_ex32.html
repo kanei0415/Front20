@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <link rel="stylesheet" type="text/css" href="./css/jquery_ex31.css">
+    <script src="./js/jquery.min.js"></script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            let cur = $("#p1").height();
+            $("#p1").height(cur+50);
+            //height(); 이건 그냥 높이 가져오는거
+            //height('200'); 이건 높이 셋팅
+            //height('200px');
+            
+            //height('+=50px'); - 누적
+            //기존의 높이에 50픽셀 누적시켜서 셋팅
+            /*
+            let cur = $("#p1").height();
+            $("#p1").height(cur+50);
+            */
+
+            //아이디가 p1인 요소의 높이
+            //console.log(w1);
+            //alert(w1);
+        });
+
+    </script>
+    
+</head>
+<body>
+    <h1>수치 조작 메서드</h1>
+    <p id="p1">내용1</p>
+
+</body>
+</html>
+

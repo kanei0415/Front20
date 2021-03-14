@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <!--
+        jquery는 html태그를 지정해서...
+        움직여라, 색깔바꿔라, 크기 바꿔라, 이미지 바꿔라...
+        동적기능...
+        
+        DOM API
+        document객체에 있는 함수 사용
+
+    -->
+
+    <!--
+        //정의
+        function hello(){
+
+        }
+
+        //호출
+        hello();
+
+        DOM TREE
+        Document Object Model Tree
+        :HTML태그를 부모,자식,상위,하위 구성하면
+        document객체 안에 정보가 다들어있는데
+        Tree(트리구조)구조로 저장되어있다.
+    -->
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){//이문장 자체가 호출이다.
+            $("#title").css("color","red");
+                        //css메서드 
+                        //(고정 css파일에서 하던걸 동적으로 할수 있게 하는거)
+
+        //$선택자 - 요소 접근을 위한것
+        //아이디가 title인 요소에 접근해서 글자색깔을 red로 바꾼다.
+        });
+    </script>
+    
+</head>
+<body>
+    <h1 id="title">제목</h1>
+
+</body>
+</html>
+

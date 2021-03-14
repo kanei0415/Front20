@@ -1,0 +1,62 @@
+https://www.youtube.com/watch?v=W4Ou96H-cPc
+https://www.ssyoutube.com/watch?v=W4Ou96H-cPc
+savefrom net 
+(y앞에 ss추가하면 저장소가 나옴)
+영상이 저장된곳이다.
+
+나머지 시간은
+유튜브에서 영상 직접 받아서
+너무 길면 잘라서
+프로젝트에 추가해서 실행해보세요
+
+일단 닷홈 회원가입한다음에...
+무료호스팅 신청하고...
+호스팅 관리 목록에 
+이렇게 뜨는지 확인해보세요...
+그리고 filezila client버전 다운로드후 설치
+
+fortpower.dothome.co.kr
+
+http://fortpower.dothome.co.kr
+이제 본인 껄로
+http://aaa1234.dothome.co.kr
+들어가면 세팅 완료 페이지가 나올겁니다.
+
+파일질라는
+서버공간에 파일을 전송하는 프로그램.
+ftp 프로그램
+file transfer protocol
+파일 전송 프로토콜 (통신규약)
+(서버에 파일을 보낼때 사용하는 규약)
+
+http
+hyper text transfer protocol
+(하이퍼 텍스트 전송 프로토콜)
+서버에 html파일을 요청하기 위한 프로토콜
+브라우저로 읽기위해서
+
+
+호스트
+
+호스트:ftp://fortpower.dothome.co.kr
+사용자명:fortpower
+비밀번호:ghqja880!
+
+html폴더안에
+index.html을 만들어주면...
+나중에 http 주소로 들어갔을때
+index.html을 먼저 읽어준다.
+
+파일질라
+서버에 파일 전송하는 프로그램
+ftp (파일전송 프로토콜)
+
+
+브라우저로 열때는 http
+
+
+
+
+
+
+

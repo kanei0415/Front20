@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">   
+    </head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.cookie.min.js"></script>
+    
+    <script>
+        $(function(){
+            if($.cookie("popup")=="book_val")
+            {//popup이라는 이름의 쿠키 값이 book_val이면
+                $("#notice_wrap").hide();
+                //팝업 숨기겠다.
+            }
+            
+            var expChk=$("#expiresChk");
+            $(".closeBtn").on("click",closePop);
+            //닫기 버튼에 이벤트 추가
+            //닫기 버튼 클릭하면 closePop함수 호출
+
+            function closePop(){
+                //닫기 버튼 눌렀을때 실행되는 기능
+
+                //기능사 팝업창은
+                //그냥 닫기버튼만 누르면 그냥 닫는다.
+                
+                //쿠키 기능이 들어간 팝업창
+                //체크여부를 판단해서
+                //체크가 안되있다. 그러면, 그냥 닫으면 된다.
+                //체크가 되어있다. 쿠키생성하고 닫는다.
+                if( expChk.is(":checked")==true)
+                {//체크박스의 checked 속성이 true인가?
+                    $.cookie("popup","book_val",{expries:7,path:"/"});
+                             //이름     값          세부설정
+                    //쿠키 생성
+                    //popup이라는 이름의 쿠키
+                    //값은 book_val
+                    //7일뒤에 만료되는 쿠키
+                    // / 현재 경로
+                }
+                $("#notice_wrap").fadeOut("fast");
+                //사라지게 한다.
+            }
+        })
+    </script>
+    
+    <body>
+        <div id="notice_wrap">
+
+            <img src="./img/popup_img.jpg" alt="공지사항">
+
+            <p class="closeWrap">
+                <input type="checkbox" name="expiresChk" id="expiresChk">
+                <label for="expiresChk">7일 동안 이 창 열지 않기</label>
+                <button class="closeBtn">닫기</button>
+            </p>
+        </div>
+    </body>    
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;    
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #F1F1F1;
+}
+
+#wrap
+{
+    width:400px;
+    height:900px;
+    background: white;
+
+    margin-left: 506px;
+}
+
+#login_area
+{
+    width:400px;
+    height:400px;
+    background: white;
+}

@@ -1,0 +1,13 @@
+ul
+{
+    list-style-type: none;
+}
+
+ul>li
+{
+    float:left;
+    width:100px;
+    height:100px;
+    background: aqua;
+    margin-right: 10px;
+}

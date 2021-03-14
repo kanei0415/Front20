@@ -1,0 +1,82 @@
+#header>.logo
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: brown;
+}
+
+#header>.logo>img
+{
+    margin-top:30px;
+}
+
+#header>.nav
+{
+    float:left;
+    width:1000px;
+    height:100px;
+    background: burlywood;
+}
+
+.left_bg
+{
+    width:780px;
+    height:180px;
+    background: orange;
+
+    position: absolute;
+    left:0px;
+    top:80px;
+}
+
+.right_bg
+{
+    width:20px;
+    height:180px;
+    background: orange;
+
+    position: absolute;
+    left:1180px;
+    top:80px;
+}
+
+#header>.nav>.gnb
+{
+    float:right;
+    margin-top:20px;
+    margin-right: 20px;
+}
+
+#header>.nav>.gnb>li
+{
+    float:left;
+}
+
+#header>.nav>.gnb>li>a
+{
+    display:block;
+    width:100px;
+    height:60px;
+    background: indianred;
+    text-align: center;
+    font-weight: bold;
+    font-size:16px;
+
+    padding-top:10px;
+    box-sizing: border-box;
+}
+
+.lnb>li>a
+{
+    display:block;
+    width:100px;
+    height:60px;
+    background: indigo;
+    text-align: center;
+    font-weight: bold;
+    font-size:16px;
+
+    padding-top:10px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    var del_index=0;
+    var json_arr=[
+      {id:2018038018,name:"이민호",age:20,major:"컴퓨터공학"},
+      {id:2017038019,name:"정채연",age:21,major:"전자공학"},
+      {id:2016038020,name:"송중기",age:22,major:"화학공학"},
+      {id:2015038021,name:"조인성",age:23,major:"경영학"},
+      {id:20140380212,name:"김향기",age:24,major:"경제학"},
+    ];
+    var left_arr=null;
+    var right_arr=null;
+
+    name=prompt("삭제할 회원이름 입력");
+    for(var i=0; i<json_arr.length; i++)
+    {
+      if(json_arr[i].name==name)
+      {
+        del_index=i;
+      }
+    }
+    left=json_arr.slice(0,del_index);
+    /*
+    [{id:2018038018,name:"이민호",age:20,major:"컴퓨터공학"},
+      {id:2017038019,name:"정채연",age:21,major:"전자공학"}]
+    */
+    right=json_arr.slice(del_index+1);
+    /*
+    [{id:2015038021,name:"조인성",age:23,major:"경영학"},
+     {id:20140380212,name:"김향기",age:24,major:"경제학"}]
+    */
+    var new_arr = left.concat(right);
+    console.log(new_arr);
+    
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

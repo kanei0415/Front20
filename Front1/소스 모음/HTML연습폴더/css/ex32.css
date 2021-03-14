@@ -1,0 +1,39 @@
+#div1
+{
+    color:white;
+
+    width:100px;
+    height:100px;
+    background: red;
+    border-radius: 70%;
+    /* 경계선 반지름 */
+    display:inline-block;
+
+    padding-left: 55px;
+    padding-top: 55px;
+
+    margin-right: 150px; /* 오른쪽 마진 50px */
+}
+
+#div2
+{
+    color:white;
+
+    width:100px;
+    height:100px;
+    background: green;
+    border-radius: 70%;
+    /* 경계선 반지름 */
+    display:inline-block;
+
+    padding-left: 55px;
+    padding-top: 55px;
+}
+
+/* padding - 패딩 */
+/* padding - 내부충전제 */
+/* padding - 내부여백 */
+
+/* margin - 마진 */
+/* margin - 마진을 얼만큼 남기냐? */
+/* margin - 요소 사이 간격 */

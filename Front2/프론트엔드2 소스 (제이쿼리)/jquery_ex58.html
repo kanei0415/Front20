@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <link rel="stylesheet" type="text/css" href="./css/jquery_ex58.css">
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+            
+            $("button").click(function(){
+                $("#my_div").animate({left:'+=250px'});
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <button>Start Animation</button>
+
+    <div id="my_div"></div>
+</body>
+</html>
+

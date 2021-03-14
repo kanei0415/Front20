@@ -1,0 +1,64 @@
+#wrap1
+{
+    width:500px;
+    height:500px;
+    background: red;
+}
+
+.span1
+{
+    background: indianred;
+    /*display:inline;*/
+}
+
+.span2
+{
+    background: indigo;
+    /*display:inline;*/
+}
+
+#wrap2
+{
+    width:500px;
+    height:500px;
+    background: green;
+}
+
+.div1
+{
+    width:100px;
+    height:100px;
+    background: orange;
+    /*display:block;*/
+}
+
+.div2
+{
+    width:100px;
+    height:100px;
+    background: orangered;
+    /*display:block;*/
+}
+
+#wrap3
+{
+    width:500px;
+    height:500px;
+    background: blue;
+}
+
+.div3
+{
+    width:100px;
+    height:100px;
+    background: palegreen;
+    display:inline-block;
+}
+
+.div4
+{
+    width:100px;
+    height:100px;
+    background: paleturquoise;    
+    display:inline-block; 
+}

@@ -1,0 +1,43 @@
+#footer>.logo
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: firebrick
+}
+
+#footer>.copyright
+{
+    float:left;
+    width:800px;
+    height:100px;
+    background: forestgreen
+}
+
+#footer>.family
+{
+    float:left;
+    width:200px;
+    height:100px;
+    background: fuchsia
+}
+
+#footer>.logo>img
+{
+    margin-top:20px;
+}
+
+#footer>.copyright>address
+{
+    margin-top:20px;
+}
+
+#footer>.family>select
+{
+    width:150px;
+    height:50px;
+    font-size: 16px;
+
+    margin-left:15px;
+    margin-top:15px;
+}

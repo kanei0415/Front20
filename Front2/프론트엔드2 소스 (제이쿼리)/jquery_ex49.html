@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    
+    <script src="./js/jquery.min.js">
+    </script>
+   
+    <script>//익명함수 (이름이 없는 함수)
+        $(function(){
+            
+            setInterval(2000,slideFade());
+
+            function slideFade(){
+                
+            }
+
+            $(".btn1").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+                $(".box").fadeTo("fast",0.3);//빠르게 투명도 30%
+                        //투명도 설정
+                        //css의 opacity
+            });
+
+            $(".btn2").on("click",function(){
+                //클래스 btn1클릭하면, 익명함수 실행
+                $(".box").fadeTo("fast",1);//빠르게 투명도 100%
+                        //투명도 설정
+                        //css의 opacity
+            });
+        })
+    </script>
+</head>
+<body>
+    <p>
+        <button class="btn1">30%</button>
+        <button class="btn2">100%</button>
+    </p>
+
+    <div class="box">
+        <div class="content" style="background:red;">
+            html+css, javascript, jquery, server, ajax, react
+        </div>
+    </div>
+
+</body>
+</html>
+

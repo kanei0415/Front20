@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>예제</title>
+
+  <script>
+    
+    var arr=[
+    {name:'apple',price:1000},
+    {name:'banana',price:2000},
+    {name:'kiwi',price:3000}
+    ];
+
+    function isApple(element){
+      if(element.name=='apple'){
+        return true;
+      }
+    }
+
+    var item = arr.find(isApple);
+    console.log(item.name);
+    console.log(item.price);
+  
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

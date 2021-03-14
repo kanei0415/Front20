@@ -1,0 +1,29 @@
+div
+{
+    display: inline-block;
+}
+
+#box1
+{
+    width:100px;
+    height:100px;
+    background: navy;
+}
+
+#box2
+{
+    width:100px;
+    height:100px;
+    background: yellow;   
+    
+    position: absolute;
+    top:40px;
+    left:40px;
+}
+
+#box3
+{
+    width:100px;
+    height:100px;
+    background: navy;
+}
