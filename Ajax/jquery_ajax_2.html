@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="js/jquery.js"></script>
+
+  <script>
+    $(() => {
+      $.ajax({
+        url : "./json/MOCK_DATA.json",
+        dataType : "json",
+
+        success : function(datas) {
+          let dataTable = $("<table />");
+
+          for(let data of datas) {
+            let $id = data.id;
+            let $first_name = data.first_name;
+            let $last_name = data.last_name;
+
+            let dataTableRow = $("<tr />").append(
+              $("<td />").text($id),
+              $("<td />").text($first_name),
+              $("<td />").text($last_name),
+            );
+
+            dataTable.append(dataTableRow);
+          }
+
+          $("#root").append(dataTable);
+        },
+
+      });
+    });
+  </script>
+</html>

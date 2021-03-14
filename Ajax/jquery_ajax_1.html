@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <h1>dataWrap_1</h1>
+    <div id="dataWrap_1">
+
+    </div>
+
+    <h1>dataWrap_2</h1>
+    <div id="dataWrap_2">
+      
+    </div>
+  </body>
+
+  <script src="js/jquery.js"></script>
+
+  <script>
+    $(() => {
+      $("#dataWrap_1").load("jquery_ajax_data.html #data_1");
+
+      $("#dataWrap_2").load("jquery_ajax_data.html #data_2");
+    });
+  </script>
+
+</html>
