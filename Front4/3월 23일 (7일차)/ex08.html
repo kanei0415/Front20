@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ex08</title>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+  
+  <div id="account">
+    <span v-if="num>0">양의정수</span>
+    <span v-else-if="num==0">0이다.</span>
+    <span v-else>음의정수</span>
+  </div>
+
+  <script type="text/javascript">
+    var simple=new Vue({
+      el:'#account',
+      data:{
+        num:10
+      }
+
+    })
+  </script>
+</body>
+</html>

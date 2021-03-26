@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ex05</title>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+  <div id="simple">
+    <input type="text" placeholder="동물을 입력하세요" v-model="animal_name">
+    <!--dog, cat-->
+    <img v-bind:src="imagePath">
+  </div>
+  <script type="text/javascript">
+
+   var twoway=new Vue({
+     el:'#simple',
+     data:{
+      animal_name:'',
+      imagePath:'',
+     },
+
+     watch:{
+      animal_name:function(){
+        this.imagePath='./images/'+this.animal_name+".jpg"
+      }
+      /*비동기적으로 감시해서 어떤기능을 실행할때*/
+      /*비동기, 동기*/
+     }
+     
+   })
+
+  </script>
+</body>
+</html>

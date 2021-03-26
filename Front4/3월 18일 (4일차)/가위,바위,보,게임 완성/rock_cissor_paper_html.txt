@@ -1,0 +1,7 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<div id="app">
+  
+  <button @click="choice('가위')">가위</button>
+  <button @click="choice('바위')">바위</button>
+  <button @click="choice('보')">보</button>
+</div>

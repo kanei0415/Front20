@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ex02</title>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+  <div id="simple">
+    <input type="text" v-bind:value="message">
+    <br/>
+    <img v-bind:src="imagePath"><!--Vue객체안에 있는 imagePath값으로 이미지경로 지정-->
+  </div>
+  <script type="text/javascript">
+
+  var model={
+    message:'v-bind 디렉티브',
+    imagePath:'http://sample.bmaster.kro.kr/photos/61.jpg'
+  }
+
+  var simple = new Vue({
+    el:'#simple',
+    data:model
+  })
+  </script>
+</body>
+</html>

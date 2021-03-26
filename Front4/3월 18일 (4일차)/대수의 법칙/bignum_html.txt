@@ -1,0 +1,20 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<div id="app">
+ 
+ <template>
+     <div id="count_area">
+  나온 숫자:{{num}}
+  <li v-for="c,i in count" v-show="i>=1">
+  {{i}}의 횟수:{{c}}
+  </li>
+  <li>총 시행 횟수:{{total}}회</li>
+  <button v-on:click="rolldice()">주사위 굴리기    </button> 
+  </div>
+   
+ </template>
+
+  <div id="percent_area">
+    <li v-for="p,i in per" v-show="i>=1">{{i}}의 확률:{{p}}%</li> 
+  </div>
+  
+</div>

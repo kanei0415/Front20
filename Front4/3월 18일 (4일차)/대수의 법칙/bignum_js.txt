@@ -1,0 +1,27 @@
+﻿var vm=new Vue({
+	el: "#app",
+  
+  data:{
+  	num:0,
+    total:0,
+  	count:[0,0,0,0,0,0,0],
+    per:[0,0,0,0,0,0,0],
+  },
+  
+  methods:{
+  	rolldice:function(){
+      this.total++
+    	this.num=Math.ceil(Math.random()*6)
+      
+      this.count[this.num]++
+      
+      for(var i=1; i<=6; i++){
+      this.per[i]=(this.count[i]/this.total)*100
+      
+      this.per[i]=(this.per[i]).toFixed(1)
+      }
+			
+    }
+  }
+  
+})

@@ -1,0 +1,5 @@
+3월 25일 수업 내용 (9일차)
+
+- computed의 getter, setter사용
+- v - watch를 이용한 좌표 합 구하기
+- fetch를 이용해서 서버로부터 JSON데이터 가져와서 검색하기

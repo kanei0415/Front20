@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ex13</title>
+  <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+  <!--pre태그 글자 그대로-->
+  <div id="example">
+    <!-- v-pre의 용도:v-pre로 선언한것 내부에는 vue속성이 쓰여지지 않았다.-->
+    <span v-pre>{{message}}</span>
+  </div>
+  <script type="text/javascript">
+    var simple = new Vue({
+      el:'#example',
+      data:{
+        message:'Hello World'
+      }
+    })
+  </script>
+</body>
+</html>
