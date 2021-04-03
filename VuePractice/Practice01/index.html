@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="name" placeholder="Enter name">
+        <button v-on:click="addPerson()">Add</button>
+
+        <div v-for="work in workList">
+            <work-component
+            v-bind:name="work.name"
+            v-bind:done="work.done"></work-component>
+        </div>
+    </div>
+</body>
+
+</html>

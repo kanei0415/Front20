@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="name" placeholder="이름입력">
+        <input type="text" v-model="age" placeholder="나이입력">
+        <input type="text" v-model="height" placeholder="키입력">
+        <button v-on:click="addInfo()">추가</button>
+        <div v-for="person in personList">
+            <person-component
+            v-bind:name="person.name"
+            v-bind:age="person.age"
+            v-bind:height="person.height"></person-component>
+        </div>
+
+    </div>
+</body>
+
+</html>

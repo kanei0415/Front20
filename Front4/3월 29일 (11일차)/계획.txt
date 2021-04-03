@@ -1,0 +1,8 @@
+1.to do list 완성하기
+~vue 응용 예제 연습 하고
+
+2.컴포넌트 분리 방법
+(to do list 완성하기)
+
+3.vue-cli 방법
+(to do list 완성하기)

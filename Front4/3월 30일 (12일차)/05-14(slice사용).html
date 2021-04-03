@@ -8,12 +8,12 @@
         * {
             box-sizing: border-box;
         }
-        
+
         ul {
             margin: 0;
             padding: 0;
         }
-        
+
         ul li {
             cursor: pointer;
             position: relative;
@@ -26,17 +26,17 @@
             -ms-user-select: none;
             user-select: none;
         }
-        
+
         ul li:hover {
             background: #ddd;
         }
-        
+
         ul li.checked {
             background: #BBB;
             color: #fff;
             text-decoration: line-through;
         }
-        
+
         ul li.checked::before {
             content: '';
             position: absolute;
@@ -49,32 +49,32 @@
             height: 8px;
             width: 8px;
         }
-        
+
         .close {
             position: absolute;
             right: 0;
             top: 0;
             padding: 12px 16px 12px 16px
         }
-        
+
         .close:hover {
             background-color: #f44336;
             color: white;
         }
-        
+
         .header {
             background-color: purple;
             padding: 30px 30px;
             color: yellow;
             text-align: center;
         }
-        
+
         .header:after {
             content: "";
             display: table;
             clear: both;
         }
-        
+
         .input {
             border: none;
             width: 75%;
@@ -83,7 +83,7 @@
             float: left;
             font-size: 16px;
         }
-        
+
         .addbutton {
             padding: 10px;
             width: 25%;
@@ -96,11 +96,11 @@
             cursor: pointer;
             transition: 0.3s;
         }
-        
+
         .addbutton:hover {
             background-color: #bbb;
         }
-        
+
         .completed {
             text-decoration: none;
         }
@@ -117,19 +117,18 @@
             <span class="addbutton" v-on:click="addTodo()">추가</span>
         </div>
         <ul id="todolist">
-            <li>
-                <span>Task1</span>
-                <span class="close">&#x00D7;</span>
-            </li>
-            <li>
-                <span>Task2</span>
-                <span>(완료)</span>
-                <span class="close">&#x00D7;</span>
-            </li>
+            <!--JSON배열값을 li에 할당해서, 반복 렌더링-->
+            <!--각각의 li를 클릭했을때 done->true->fasle -->
+            <!--done값이 true...checked속성 됬다. 안됬다. -->
+            <!--토글 기능으로 누르면 됬다가, 안됬다가... -->
 
-            <li>
-                <span>Task3</span>
-                <span class="close">&#x00D7;</span>
+            <li v-for="a in todolist" v-on:click="doneToggle(a.id)" v-bind:class="checked(a.done)">
+                <!--li에 v-on:click 이벤트 적용 -->
+                <!--JSON배열 todolist에서 객체 하나씩 a로 가져와서...-->
+                <span>{{a.todo}}</span>
+                <span v-if="a.done">(완료)</span>
+                <span class="close" v-on:click="deleteTodo(a.id)">&#x00D7;</span>
+                <!--객체 a의 todo값만 출력-->
             </li>
         </ul>
     </div>
@@ -165,9 +164,70 @@
                         todo: this.todo,
                         done: false
                     });
+                },
+                checked: function(done) {
+                    //li를 누르면
+                    //li에 class="checked가 적용되게 만듬"
+                    if (done) {
+                        return {
+                            checked: true
+                        };
+                    } else {
+                        return {
+                            checked: false
+                        };
+                    }
+                    //v-bind:class={checked:true}
+                    //v-bind:class={checked:false}
+                    //v-bind:class={red:attachRed}
+                },
+                doneToggle: function(id) {
+
+                    var index = this.todolist.findIndex(
+                        function(item) {
+                            return item.id == id;
+                            //return true;
+                            //return false;
+                            //JSON배열에서 가져온 값의 id
+                            //매개변수로 받은 값의 id
+                            //비교해서
+                        }
+                    )
+                    alert(index);
+
+                    alert(this.todolist[index].done);
+                    this.todolist[index].done = !this.todolist[index].done;
+                    alert(this.todolist[index].done);
+
+                },
+                deleteTodo: function(id) {
+
+                  var index = this.todolist.findIndex(
+                      function(item) {
+                          return item.id == id;
+                          //return true;
+                          //return false;
+                          //JSON배열에서 가져온 값의 id
+                          //매개변수로 받은 값의 id
+                          //비교해서
+                      }
+                  )
+                  console.log(index);
+                    var length = this.todolist.length;
+                    console.log(length);
+                    var left=this.todolist.slice(0,index);
+                    console.log(left);
+                    var right=this.todolist.slice(index+1,length);
+                    console.log(right);
+                    var new_ary=new Array(0);
+                    new_ary=left.concat(right);
+
+                    console.log(new_ary);
+                    this.todolist=new_ary;
+
+                    console.log(this.todolist);
                 }
             }
-
         })
     </script>
 </body>
