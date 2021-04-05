@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div id="radio_area">
+            <input type="radio" v-model="radioVal" value="korea">한국
+            <input type="radio" v-model="radioVal" value="china">중국
+            <input type="radio" v-model="radioVal" value="japan">일본   
+        </div>
+        <div>
+            <div v-if="radioVal=='korea'">
+                한국의 음식:김치, 불고기<br>
+                한국의 수도:서울<br>
+            </div>
+            <div v-else-if="radioVal=='china'">
+                중국의 음식:마라탕, 베이징덕<br>
+                한국의 수도:베이징<br>
+            </div>
+            <div v-else-if="radioVal=='japan'">
+                한국의 음식:스시, 라멘<br>
+                한국의 수도:도쿄<br>
+            </div>
+        </div>
+        <button v-on:click="choice()">선택</button>
+    </div>
+</body>
+
+</html>

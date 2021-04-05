@@ -1,7 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="ko">
-
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -10,18 +9,15 @@
     <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
     <script src="./js/app.js"></script>
 </head>
-
 <body>
     <div id="app">
-        <input type="text" v-model="name" placeholder="Enter name">
-        <button v-on:click="addPerson()">Add</button>
-
-        <div v-for="work in workList">
-            <work-component
-            v-bind:name="work.name"
-            v-bind:done="work.done"
-            v-bind:id="work.id"></work-component>
+        {{message}}
+        <div id="radio_area">
+            <input type="checkbox" name="check" value="korea">한국
+            <input type="checkbox" name="check" value="china">중국
+            <input type="checkbox" name="check" value="japan">일본   
         </div>
+        <button v-on:click="choice()">선택</button>
     </div>
 </body>
 

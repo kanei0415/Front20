@@ -1,23 +1,27 @@
 $(document).ready(function() {
 
   Vue.component('work-component', {
-      props: ['name', 'done'],
+      props: ['id', 'name', 'done'],
 
       methods : {
-          deleteThis : function () { 
-              App.deletePerson(this.name)
+          deleteThis : function () {
+              App.deletePerson(this.id)
           },
 
           setDoneThis : function () {
               this.done = !this.done
-              App.setDone(this.name)
+              App.setDone(this.id)
           }
+      },
+
+      mounted : {
+        document.getElementById('doneBtn').setAttr('id', 'doneBtn' + this.id)
       },
 
       template: "<div>\
       <span v-bind:class={lineThrough:this.done}>{{name}}</span>\
-      <button  v-on:click='setDoneThis(name)'>done</button>\
-      <button v-on:click='deleteThis(name)'>delete</button>\
+      <button id='doneBtn'  v-on:click='setDoneThis(id)'>done</button>\
+      <button v-on:click='deleteThis(id)'>delete</button>\
       </div>",
   });
 
@@ -25,18 +29,20 @@ $(document).ready(function() {
 
       el: '#app',
       data: {
+          idCounter: 3,
           name: '',
           done: false,
           workList: [
-              { name: "Work1", done: false },
-              { name: "Work2", done: false },
-              { name: "Work3", done: false }
+              { id: 1, name: "Work1", done: false },
+              { id: 2, name: "Work2", done: false },
+              { id: 3, name: "Work3", done: false }
           ]
       },
 
       methods: {
           addPerson: function() {
               this.workList.push({
+                id: ++this.idCounter,
                 name: this.name,
                 done: false
               });
@@ -44,19 +50,27 @@ $(document).ready(function() {
               this.done = false;
           },
 
-          deletePerson: function (name) {  
+          deletePerson: function (id) {
             this.workList = this.workList.filter(
-                work => work.name != name
+                work => work.id != id
             )
           },
 
-          setDone: function (name) {
+          setDone: function (id) {
             let index = this.workList.findIndex(
-                work => work.name == name
+                work => work.id == id
             );
 
             if(index != -1) {
                 this.workList[index].done = !this.workList[index].done
+
+                let btn = document.getElementById('doneBtn' + this.workList[index].id)
+
+                if (this.workList[index].done) {
+                  btn.innerText('done')
+                } else {
+                  btn.innerText('doing')
+                }
             }
           }
       }
