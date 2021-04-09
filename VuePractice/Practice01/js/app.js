@@ -20,7 +20,7 @@ $(document).ready(function() {
 
       template: "<div>\
       <span v-bind:class={lineThrough:this.done}>{{name}}</span>\
-      <button id='doneBtn'  v-on:click='setDoneThis(id)'>done</button>\
+      <button ref='doneBtn'  v-on:click='setDoneThis(id)'>done</button>\
       <button v-on:click='deleteThis(id)'>delete</button>\
       </div>",
   });
@@ -66,11 +66,11 @@ $(document).ready(function() {
 
                 let btn = document.getElementById('doneBtn' + this.workList[index].id)
 
-                if (this.workList[index].done) {
-                  btn.innerText('done')
-                } else {
-                  btn.innerText('doing')
-                }
+                // if (this.workList[index].done) {
+                //   btn.innerText = 'done'
+                // } else {
+                //   btn.innerText = 'doing'
+                // }
             }
           }
       }

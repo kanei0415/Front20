@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+        <div v-for="todoItem in todoList">
+            <todo-component v-bind:id="todoItem.id" v-bind:todo="todoItem.todo" v-bind:done="todoItem.done"></todo-component>
+        </div>
+
+    </div>
+</body>
+
+</html>

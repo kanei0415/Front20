@@ -10,7 +10,6 @@ $(document).ready(function(){
         setText:function(){
             var spn=document.getElementById("txt");
             spn.innerText='스팬';
-
         }
     }
 
