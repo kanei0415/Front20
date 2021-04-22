@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title> </title>
+  <script src="js/jquery.min.js"></script>
+
+</head>
+
+<script>
+  var problem=1;
+
+  function create_radio_button(){
+
+    for(var i=1; i<=4; i++){
+      var radioInput = document.createElement('input');
+    
+      radioInput.setAttribute('type', 'radio');
+      radioInput.setAttribute('name', "problem"+problem);
+      radioInput.setAttribute('value', "answer"+i);
+
+      document.getElementById("radio_area").appendChild(radioInput);
+    }
+    problem++;
+    var hr = document.createElement('hr');
+    document.getElementById("radio_area").appendChild(hr);
+  }
+
+</script>
+
+<style>
+
+</style>
+
+<body>
+  <div id="radio_area" style="width:600px;height:600px;background-color:yellow">
+    
+  </div>
+  
+  <button onclick="create_radio_button()">라디오 버튼 생성</button>
+
+</body>
+
+</html>

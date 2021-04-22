@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#wrap {
+  width: 500px;
+  height: 500px;
+
+  background-color: blue;
+}
+
+#wrap > #display {
+  width: 100%;
+  height: 400px;
+}
+
+#display > #music-img {
+  width: 100%;
+  height: 50%;
+}
+
+#music-img > img {
+  width: 80%;
+  height: 100%;
+
+  margin-left: 10%;
+}
+
+#display > #audio-name {
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#display > #audio-path {
+  width: 100%;
+  height: 50%;
+}
+
+#wrap > #interface {
+  width: 100%;
+  height: 100px;
+}
+
+#interface > button {
+  width: 100px;
+  height: 50px;
+
+  margin-left: 50px;
+  margin-top: 25px;
+}

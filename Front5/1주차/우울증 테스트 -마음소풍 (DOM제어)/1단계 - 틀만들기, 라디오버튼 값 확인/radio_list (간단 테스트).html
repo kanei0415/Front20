@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title> </title>
+  <script src="js/jquery.js"></script>
+
+</head>
+
+<script>
+  var total=0;
+
+  function cal_gloomy_test(){
+    var radio_btn1 = document.getElementsByName("problem1");
+
+    for(var i = 0; i<radio_btn1.length; i++){
+            //만약 라디오 버튼이 체크가 되어있다면 true
+            if(radio_btn1[i].checked==true){
+                //라디오 버튼 값
+                alert(radio_btn1[i].value);
+                //라디오 버튼이 체크되면 radio_btn_check를 1로 만들어준다.
+                total += i;
+            }
+        }
+
+    var radio_btn2 = document.getElementsByName("problem2");
+
+    for(var i = 0; i<radio_btn2.length; i++){
+            //만약 라디오 버튼이 체크가 되어있다면 true
+            if(radio_btn2[i].checked==true){
+                //라디오 버튼 값
+                alert(radio_btn2[i].value);
+                //라디오 버튼이 체크되면 radio_btn_check를 1로 만들어준다.
+                total += i;
+            }
+        }
+
+      alert("총점:"+total);
+  }
+
+</script>
+
+<style>
+
+</style>
+
+<body>
+  <div style="width:600px;height:600px;background-color:yellow">
+    <hr id="first hr">
+    &emsp;1 2 3 4<br>
+    1.평소에는 아무렇지도 않던 일들이 귀찮았다.
+    <input type="radio" name="problem1" value="answer1" checked>
+    <input type="radio" name="problem1" value="answer2" checked>
+    <input type="radio" name="problem1" value="answer3" checked>
+    <input type="radio" name="problem1" value="answer4" checked>
+    <hr>
+    2.입맛도 없었고, 먹고 싶지도 않았다.
+    <input type="radio" name="problem2" value="answer1" checked>
+    <input type="radio" name="problem2" value="answer2" checked>
+    <input type="radio" name="problem2" value="answer3" checked>
+    <input type="radio" name="problem2" value="answer4" checked>
+    <hr>
+    점수 계산
+    1. 0점 2. 1점 3. 2점 4. 3점
+  </div>
+  
+  <button onclick="cal_gloomy_test()">제출</button>
+
+</body>
+
+</html>

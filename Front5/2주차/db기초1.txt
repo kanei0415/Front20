@@ -1,0 +1,28 @@
+show databases;
+create database practice;
+use practice;
+
+create table person(
+name varchar(10),
+age int,
+height double
+
+);
+
+insert into person(name,age,height) values('이민호',20,176.6);
+
+insert into person(name,age,height) values('정채연',21,163.3);
+
+insert into person(name,age,height) values('송중기',22,177.8);
+
+select * from person;
+//person테이블에서 모든 항목을 조회하겠다.
+select name from person;
+//person테이블에서 name 항목을 조회하겠다.
+
+select * from person where age >= 21;
+//person테이블에서 나이가 21살 이상인 항목 모두 조회
+
+
+
+

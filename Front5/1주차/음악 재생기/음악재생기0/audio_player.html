@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>
+<script src="js/jquery.js"></script>
+
+<script>
+var audio = null;
+
+var audio_list = ["./my_audio/my_piano1.mp3","./my_audio/my_piano2.mp3","./my_audio/my_piano3.mp3"];
+var index=0;
+
+$(window).load(function(){
+	audio = new Audio();//오디오 객체 생성
+	audio.src = "./my_audio/my_piano1.mp3";
+	//오디오 객체의 음원 (source)
+});
+
+function start_music(){
+	audio.play();
+}
+
+function pause_music(){
+
+}
+
+function stop_music(){
+
+}
+
+function next_music(){
+
+
+}
+
+</script>
+</head>
+
+<body>
+	<button onclick="start_music()">시작</buttion>
+	<button onclick="pause_music()">일시정지</buttion>
+	<button onclick="stop_music()">끄기</buttion>
+	<button onclick="next_music()">다음</buttion>
+
+</body>
+</html>
