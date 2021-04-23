@@ -1,0 +1,49 @@
+#header #top{
+    width:100%;
+    height:60%;
+    background: gold;
+}
+
+#header #top .left_list{
+    float:left;
+
+    margin-left:300px;
+}
+
+#header #top .left_list a img{
+    width:240px;
+    height:120px;
+
+}
+
+#header #top .left_list input{
+    margin-top: 50px;
+    width:550px;
+    height:40px;
+
+    margin-right:50px;
+}
+
+#header #top .left_list li{
+    float:left;
+    
+}
+
+#header #top .right_list{
+    float:right;
+
+    margin-right:370px;
+ 
+}
+
+#header #top .right_list li{
+    float:left;
+    padding-top: 30px;
+    margin-right:20px;
+}
+
+#header #bottom{
+    width:100%;
+    height:60%;
+    background: greenyellow;
+}

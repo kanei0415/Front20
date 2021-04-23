@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.clearfix::after, .clearfix::before{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+.notext{
+    display:none;
+}
+
+#wrap{
+    width:1903px;
+    height:8977px;
+    background: aquamarine;
+}
+
+#header{
+    width:1903px;
+    height:173px;
+    background: antiquewhite;
+}
+
+#main #top{
+    width:1903px;
+    height:400px;
+    background: aliceblue;
+}
+
+#main #best{
+    width:1903px;
+    height:428px;
+    background: blueviolet;
+}
+
+#main #market{
+    width:1903px;
+    height:924px;
+    background: burlywood;
+}
+
+#main #service{
+    width:1903px;
+    height:223px;
+    background: brown;
+}
+
+#main #homeshopping{
+    width:1903px;
+    height:483px;
+    background: cadetblue;
+}
+
+#main #catch{
+    width:1903px;
+    height:730px;
+    background: chartreuse;
+}
+
+#main #superdeal{
+    width:1903px;
+    height:2982px;
+    background: cornflowerblue;
+}
+
+#main #overseas{
+    width:1903px;
+    height:546px;
+    background: coral;
+}
+
+#main #g9{
+    width:1903px;
+    height:465px;
+    background: crimson;
+}
+
+#main #power{
+    width:1903px;
+    height:421px;
+    background: darkcyan;
+}
+
+#main #ad{
+    width:1903px;
+    height:433px;
+    background: darkgoldenrod;
+}
+
+#main #notice{
+    width:1903px;
+    height:133px;
+    background: darkolivegreen;
+}
+
+#main #fontguide{
+    width:1903px;
+    height:60px;
+    background: firebrick;
+}
+
+#footer{
+    width:1903px;
+    height:456px;
+    background: fuchsia;
+}

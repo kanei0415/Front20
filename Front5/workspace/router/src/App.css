@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.Menu-wrapper Link{
+  width: 200px;
+  height: 100px;
+  float: left;
+
+  font-size: larger;
+  font-weight: bolder;
+}
