@@ -5,11 +5,32 @@
   text-decoration: none;
 }
 
-.Menu-wrapper Link{
+.Menu-wrapper li{
+  display: inline-block;
   width: 200px;
-  height: 100px;
-  float: left;
+  height: 50px;
 
   font-size: larger;
   font-weight: bolder;
+  text-align: center;
+}
+
+.Menu-wrapper li:hover{
+  color: white;
+  background-color: black;
+}
+
+.content{
+  width: 300px;
+  height: 300px;
+  float: left;
+
+  border: black solid 1px;
+
+  margin-left: 30px;
+}
+
+.content img{
+  width: 100%;
+  height: 200px;
 }
