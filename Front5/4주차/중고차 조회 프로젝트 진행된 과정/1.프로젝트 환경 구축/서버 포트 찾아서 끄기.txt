@@ -1,0 +1,5 @@
+netstat -ano
+
+포트번호 4000번 검색
+
+taskkill /f /pid 13256

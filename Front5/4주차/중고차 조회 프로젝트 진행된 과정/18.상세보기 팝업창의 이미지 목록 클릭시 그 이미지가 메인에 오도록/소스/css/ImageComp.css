@@ -1,0 +1,36 @@
+
+#image-comp{
+
+    border:1px solid black;
+    width:800px;
+    height:500px;
+    box-sizing: border-box;
+}
+
+#image-comp>#main{
+    border:1px solid black;
+    width:800px;
+    height:300px;
+    box-sizing: border-box;
+}
+
+#image-comp>#main>img{
+    width:400px;
+    height:300px;
+}
+
+#image-comp>#img_list{
+    border:1px solid black;
+    width:800px;
+    height:200px;
+    box-sizing: border-box;
+}
+
+#image-comp>#img_list>div{
+    float:left;
+}
+
+#image-comp>#img_list>div>img{
+    width:100px;
+    height:50px;
+}

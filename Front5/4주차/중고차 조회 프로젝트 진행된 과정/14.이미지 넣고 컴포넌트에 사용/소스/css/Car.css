@@ -1,0 +1,21 @@
+#car_components{
+    width:1800px;
+    background-color: aqua;
+}
+
+#car_component{
+    display:inline-block;
+    border:1px solid black;
+    box-sizing: border-box;
+    width:360px;
+    height:400px;
+    position: relative;
+}
+
+div#car_component:nth-child(even){
+    color:red;
+}
+
+div#car_component:nth-child(odd){
+    color:blue;
+}

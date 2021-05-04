@@ -1,0 +1,12 @@
+#popup{
+
+    border:1px solid green;
+    background-color: cadetblue;
+
+    position: absolute;
+    left:100px;
+    top:100px;
+    width:800px;
+    height:800px;
+    z-index:2;
+}

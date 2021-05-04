@@ -1,0 +1,40 @@
+
+#search-form{
+    width:600px;
+    height:50px;
+    background-color: gold;
+    position: absolute;
+    left:800px;
+    top:70px;
+}
+
+#search-form>select{
+    position:absolute;
+    left:10px;
+    top:12px;
+    border:none;
+    font-size:16px;
+    font-weight: bold;
+    color:#999;
+
+    padding-right:10px;
+    box-sizing: border-box;
+}
+
+#search-form>input{
+    width:400px;
+    height:40px;
+    border-radius: 10px;
+    padding-left:100px;
+    box-sizing: border-box;
+    font-size:14px;
+    font-weight: bold;
+    color:#999;
+}
+
+#search-form>#con_search{
+    position: absolute;
+    left:300px;
+    top:12px;
+}
+
