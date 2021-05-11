@@ -1,0 +1,17 @@
+create database react_test;
+
+use react_test;
+
+create table member(
+id varchar(10),
+password varchar(10),
+name varchar(10)
+);
+
+insert into member values('aaa1234','aaa4321','이민호');
+
+insert into member values('bbb1234','bbb4321','정채연');
+
+insert into member values('ccc1234','ccc4321','송중기');
+
+select * from member;
